@@ -11,7 +11,7 @@ yarn add avataaars
 
 then, in your React app, import the Avataaar component and put it where you like it to be, fro example
 
-```
+```jsx
 import * as React from 'react'
 import Avatar from 'avataaars'
 
