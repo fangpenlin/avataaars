@@ -4,6 +4,12 @@ React component for [Avataaars](https://avataaars.com/), used by [Avataaars Gene
 
 <p align="center"><img src='avataaars-example.png?raw=true' style='width: 300px; height: 300px;' /></p>
 
+## Feature
+
+ - SVG based, light weight and scalable
+ - Comes with [official editor](https://getavataaars.com/)
+ - Ready for editor (OptionContext)
+
 ## Usage
 
 First, you need to install the avataaars component package, here you run
