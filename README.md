@@ -7,8 +7,8 @@ React component for [Avataaars](https://avataaars.com/), used by [Avataaars Gene
 ## Feature
 
  - SVG based, light weight and scalable
- - Comes with [official editor](https://getavataaars.com/)
- - Ready for editor (OptionContext)
+ - Comes with [official editor](https://getavataaars.com/), easy to use
+ - Made for editor (OptionContext)
 
 ## Usage
 
