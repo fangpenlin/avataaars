@@ -2,7 +2,7 @@
 
 React component for [Avataaars](https://avataaars.com/), used by [Avataaars Generator](https://getavataaars.com/). Designed by [Pablo Stanley](https://twitter.com/pablostanley) and developed by [Fang-Pen Lin](https://twitter.com/fangpenlin)
 
-<div style="text-align:center"><img src='avataaars-example.png?raw=true' /></div>
+<div style="text-align: center;"><img src='avataaars-example.png?raw=true' style='width: 300px; height: 300px;' /></div>
 
 ## Usage
 
