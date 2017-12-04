@@ -6,10 +6,12 @@ React component for [Avataaars](https://avataaars.com/), used by [Avataaars Gene
 
 ## Features
 
- - SVG based, light weight and scalable
- - Comes with [official editor](https://getavataaars.com/)
+ - SVG based
+ - Light weight 
+ - Scalable
  - Easy to use
  - Easy to integrate with custom editor
+ - Comes with [official editor](https://getavataaars.com/)
 
 ## Usage
 
