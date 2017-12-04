@@ -2,6 +2,8 @@
 
 React component for [Avataaars](https://avataaars.com/), used by [Avataaars Generator](https://getavataaars.com/). Designed by [Pablo Stanley](https://twitter.com/pablostanley) and developed by [Fang-Pen Lin](https://twitter.com/fangpenlin)
 
+<div style="text-align:center"><img src='avataaars-example.png?raw=true' /></div>
+
 ## Usage
 
 First, you need to install the avataaars component package, here you run
