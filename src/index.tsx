@@ -1,10 +1,15 @@
 import * as PropTypes from 'prop-types'
 import * as React from 'react'
 
-import Avatar, { Props as AvatarProps } from './avatar'
+import Avatar, { AvatarStyle } from './avatar'
 import { OptionContext, allOptions } from './options'
 
-export interface Props extends AvatarProps {
+export { default as Avatar, AvatarStyle } from './avatar'
+export { Option, OptionContext, allOptions } from './options'
+
+export interface Props {
+  avatarStyle: string
+  style?: React.CSSProperties
   topType?: string
   accessoriesType?: string
   hairColor?: string
@@ -39,7 +44,7 @@ export default class AvatarComponent extends React.Component<Props> {
 
   render () {
     const { avatarStyle, style } = this.props
-    return <Avatar avatarStyle={avatarStyle} style={style} />
+    return <Avatar avatarStyle={avatarStyle as AvatarStyle} style={style} />
   }
 
   private updateOptionContext (props: Props) {
