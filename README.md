@@ -1,5 +1,6 @@
-# avataaars
-React component for avataaars
+# React component for Avataaars
+
+React component for [Avataaars](https://avataaars.com/), used by [Avataaars Generator](https://getavataaars.com/). Designed by [Pablo Stanley](https://twitter.com/pablostanley) and Developed by [Fang-Pen Lin](https://twitter.com/fangpenlin)
 
 ## Usage
 
