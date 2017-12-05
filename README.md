@@ -58,3 +58,7 @@ export default class MyComponent extends React.Component {
 ```
 
 To explore avatar options and generate React code, please use [Avataaars Generator](https://getavataaars.com/)
+
+## Collect options
+
+TBD
