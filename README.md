@@ -61,4 +61,4 @@ To explore avatar options and generate React code, please use [Avataaars Generat
 
 ## Collect options
 
-TBD
+To build your own avatar editor, you may want to use lower level `Avatar` component along with `OptionContext`. For more details usage, please reference to source code of [avataaars-generator](https://github.com/fangpenlin/avataaars-geneator) uses `OptionContext` to collection available options.
