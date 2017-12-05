@@ -27,7 +27,7 @@ or
 npm install avataaars --save
 ```
 
-if you are using npm. Then, in your React app, import the Avataaar component and put it where you like it to be, fro example
+if you are using npm. Then, in your React app, import the Avataaar component and put it where you like it to be, for example
 
 ```jsx
 import * as React from 'react'
