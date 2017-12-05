@@ -1,17 +1,29 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 import * as React from 'react';
 import { uniqueId } from 'lodash';
 import FacialHair from './facialHair';
 import HairColor from './HairColor';
-export default class LongHairNotTooLong extends React.Component {
-    constructor() {
-        super(...arguments);
-        this.mask1 = uniqueId('react-mask-');
-        this.mask2 = uniqueId('react-mask-');
-        this.path1 = uniqueId('react-path-');
-        this.path2 = uniqueId('react-path-');
+var LongHairNotTooLong = /** @class */ (function (_super) {
+    __extends(LongHairNotTooLong, _super);
+    function LongHairNotTooLong() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.mask1 = uniqueId('react-mask-');
+        _this.mask2 = uniqueId('react-mask-');
+        _this.path1 = uniqueId('react-path-');
+        _this.path2 = uniqueId('react-path-');
+        return _this;
     }
-    render() {
-        const { mask1, mask2, path1, path2 } = this;
+    LongHairNotTooLong.prototype.render = function () {
+        var _a = this, mask1 = _a.mask1, mask2 = _a.mask2, path1 = _a.path1, path2 = _a.path2;
         return (React.createElement("g", { id: 'Top', strokeWidth: '1', fillRule: 'evenodd' },
             React.createElement("defs", null,
                 React.createElement("rect", { id: path1, x: '0', y: '0', width: '264', height: '280' }),
@@ -19,7 +31,7 @@ export default class LongHairNotTooLong extends React.Component {
             React.createElement("mask", { id: mask1, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path1 })),
             React.createElement("g", { id: 'Mask' }),
-            React.createElement("g", { id: 'Top/Long-Hair/Long-but-not-too-long', mask: `url(#${mask1})` },
+            React.createElement("g", { id: 'Top/Long-Hair/Long-but-not-too-long', mask: "url(#" + mask1 + ")" },
                 React.createElement("g", { transform: 'translate(-1.000000, 0.000000)' },
                     React.createElement("g", { id: 'Behind', strokeWidth: '1', fillRule: 'evenodd' },
                         React.createElement("mask", { id: mask2, fill: 'white' },
@@ -30,6 +42,8 @@ export default class LongHairNotTooLong extends React.Component {
                         React.createElement("path", { d: 'M11.8989604,84.7749122 C25.7109099,83.0145308 41.6792969,77.5379209 57.3415164,68.4953343 C69.4732686,61.4910638 79.8439791,53.2579416 87.8209384,44.752196 C84.3941075,52.6604321 80.2445133,59.5880409 75.3721558,65.5350224 C88.0473359,60.0120855 96.6778122,51.1324394 101.263585,38.8960843 C101.64142,39.8180234 102.034942,40.738913 102.444252,41.6582378 C114.38223,68.4713761 136.296003,86.1944823 157,88.1510343 L157,88.1510343 L157,74 C157,33.1309285 123.869071,-7.50752664e-15 83,0 C46.9151011,6.62868839e-15 16.8627142,25.8282542 10.3212729,60.0063288 C10.214595,60.0021202 10.1074956,60 10,60 C4.4771525,60 0,65.5964406 0,72.5 C0,78.9816827 3.9466744,84.3111215 8.99999442,84.9382803 L8.99999434,85.0927525 C9.31629342,85.0638362 9.63387297,85.0328725 9.95270131,84.9998631 C9.96845895,84.9999543 9.98422521,85 10,85 C10.6492988,85 11.2841443,84.9226474 11.8989604,84.7749122 Z', id: 'Combined-Shape', fill: '#FFFFFF' })),
                     React.createElement(FacialHair, null),
                     this.props.children))));
-    }
-}
-LongHairNotTooLong.optionValue = 'LongHairNotTooLong';
+    };
+    LongHairNotTooLong.optionValue = 'LongHairNotTooLong';
+    return LongHairNotTooLong;
+}(React.Component));
+export default LongHairNotTooLong;

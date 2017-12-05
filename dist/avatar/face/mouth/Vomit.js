@@ -1,15 +1,27 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 import * as React from 'react';
 import { uniqueId } from 'lodash';
-export default class Vomit extends React.Component {
-    constructor() {
-        super(...arguments);
-        this.path1 = uniqueId('react-path-');
-        this.path2 = uniqueId('react-path-');
-        this.mask1 = uniqueId('react-mask-');
-        this.filter1 = uniqueId('react-filter-');
+var Vomit = /** @class */ (function (_super) {
+    __extends(Vomit, _super);
+    function Vomit() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.path1 = uniqueId('react-path-');
+        _this.path2 = uniqueId('react-path-');
+        _this.mask1 = uniqueId('react-mask-');
+        _this.filter1 = uniqueId('react-filter-');
+        return _this;
     }
-    render() {
-        const { path1, path2, filter1, mask1 } = this;
+    Vomit.prototype.render = function () {
+        var _a = this, path1 = _a.path1, path2 = _a.path2, filter1 = _a.filter1, mask1 = _a.mask1;
         return (React.createElement("g", { id: 'Mouth/Vomit', transform: 'translate(2.000000, 52.000000)' },
             React.createElement("defs", null,
                 React.createElement("path", { d: 'M34.0082051,12.6020819 C35.1280248,23.0929366 38.2345159,31.9944054 53.9961505,31.9999974 C69.757785,32.0055894 72.9169073,23.0424631 73.9942614,12.5047938 C74.0809675,11.6567158 73.1738581,10.9999965 72.0369872,10.9999965 C65.3505138,10.9999965 62.6703194,12.4951994 53.9894323,12.4999966 C45.3085452,12.5047938 40.7567994,10.9999965 36.0924943,10.9999965 C34.9490269,10.9999965 33.8961688,11.5524868 34.0082051,12.6020819 Z', id: path1 }),
@@ -21,10 +33,12 @@ export default class Vomit extends React.Component {
             React.createElement("mask", { id: mask1, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path1, transform: 'translate(54.000000, 21.499998) scale(1, -1) translate(-54.000000, -21.499998) ' })),
             React.createElement("use", { id: 'Mouth', fillOpacity: '0.699999988', fill: '#000000', fillRule: 'evenodd', transform: 'translate(54.000000, 21.499998) scale(1, -1) translate(-54.000000, -21.499998) ', xlinkHref: '#' + path1 }),
-            React.createElement("rect", { id: 'Teeth', fill: '#FFFFFF', fillRule: 'evenodd', mask: `url(#${mask1})`, x: '39', y: '0', width: '31', height: '16', rx: '5' }),
+            React.createElement("rect", { id: 'Teeth', fill: '#FFFFFF', fillRule: 'evenodd', mask: "url(#" + mask1 + ")", x: '39', y: '0', width: '31', height: '16', rx: '5' }),
             React.createElement("g", { id: 'Vomit-Stuff' },
                 React.createElement("use", { fill: '#88C553', fillRule: 'evenodd', xlinkHref: '#' + path2 }),
-                React.createElement("use", { fill: 'black', fillOpacity: '1', filter: `url(#${filter1})`, xlinkHref: '#' + path2 }))));
-    }
-}
-Vomit.optionValue = 'Vomit';
+                React.createElement("use", { fill: 'black', fillOpacity: '1', filter: "url(#" + filter1 + ")", xlinkHref: '#' + path2 }))));
+    };
+    Vomit.optionValue = 'Vomit';
+    return Vomit;
+}(React.Component));
+export default Vomit;

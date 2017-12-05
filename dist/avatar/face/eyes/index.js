@@ -1,3 +1,13 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 import * as React from 'react';
 import Close from './Close';
 import Cry from './Cry';
@@ -12,8 +22,12 @@ import Surprised from './Surprised';
 import Wink from './Wink';
 import WinkWacky from './WinkWacky';
 import { EyesOption, Selector } from '../../../options';
-export default class Eyes extends React.Component {
-    render() {
+var Eyes = /** @class */ (function (_super) {
+    __extends(Eyes, _super);
+    function Eyes() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Eyes.prototype.render = function () {
         return (React.createElement(Selector, { defaultOption: Default, option: EyesOption },
             React.createElement(Close, null),
             React.createElement(Cry, null),
@@ -27,5 +41,7 @@ export default class Eyes extends React.Component {
             React.createElement(Surprised, null),
             React.createElement(Wink, null),
             React.createElement(WinkWacky, null)));
-    }
-}
+    };
+    return Eyes;
+}(React.Component));
+export default Eyes;

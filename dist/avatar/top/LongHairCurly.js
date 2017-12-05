@@ -1,17 +1,29 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 import * as React from 'react';
 import { uniqueId } from 'lodash';
 import FacialHair from './facialHair';
 import HairColor from './HairColor';
-export default class LongHairCurly extends React.Component {
-    constructor() {
-        super(...arguments);
-        this.mask1 = uniqueId('react-mask-');
-        this.mask2 = uniqueId('react-mask-');
-        this.path1 = uniqueId('react-path-');
-        this.path2 = uniqueId('react-path-');
+var LongHairCurly = /** @class */ (function (_super) {
+    __extends(LongHairCurly, _super);
+    function LongHairCurly() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.mask1 = uniqueId('react-mask-');
+        _this.mask2 = uniqueId('react-mask-');
+        _this.path1 = uniqueId('react-path-');
+        _this.path2 = uniqueId('react-path-');
+        return _this;
     }
-    render() {
-        const { mask1, mask2, path1, path2 } = this;
+    LongHairCurly.prototype.render = function () {
+        var _a = this, mask1 = _a.mask1, mask2 = _a.mask2, path1 = _a.path1, path2 = _a.path2;
         return (React.createElement("g", { id: 'Top', strokeWidth: '1', fillRule: 'evenodd' },
             React.createElement("defs", null,
                 React.createElement("rect", { id: path1, x: '0', y: '0', width: '264', height: '280' }),
@@ -19,7 +31,7 @@ export default class LongHairCurly extends React.Component {
             React.createElement("mask", { id: mask1, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path1 })),
             React.createElement("g", { id: 'Mask' }),
-            React.createElement("g", { id: 'Top/Long-Hair/Curly', mask: `url(#${mask1})` },
+            React.createElement("g", { id: 'Top/Long-Hair/Curly', mask: "url(#" + mask1 + ")" },
                 React.createElement("g", { transform: 'translate(-1.000000, 0.000000)' },
                     React.createElement("path", { d: 'M105.984735,27.7643628 C114.013215,26.6267967 122.796163,26 132,26 C142.358003,26 152.182939,26.7938545 160.999342,28.2161842 C183.451688,38.7497687 199,61.559133 199,88 L199,105.044138 C187.461887,104.672508 173.831239,90.7644306 166.449951,70.7992877 C156.312295,72.8351061 144.547256,74 132,74 C120.038684,74 108.788234,72.9413637 98.9808476,71.0787685 C91.6758772,90.6271291 78.3831001,104.301811 67,105.021902 L67,88 L67,88 C67,61.1745453 83.0039076,38.0870034 105.984735,27.7643628 Z', id: 'Shadow', fillOpacity: '0.16', fill: '#000000', fillRule: 'evenodd' }),
                     React.createElement("g", { id: 'Hair', strokeWidth: '1', fill: 'none', fillRule: 'evenodd', transform: 'translate(25.000000, 10.000000)' },
@@ -29,6 +41,8 @@ export default class LongHairCurly extends React.Component {
                         React.createElement(HairColor, { maskID: mask2 })),
                     React.createElement(FacialHair, null),
                     this.props.children))));
-    }
-}
-LongHairCurly.optionValue = 'LongHairCurly';
+    };
+    LongHairCurly.optionValue = 'LongHairCurly';
+    return LongHairCurly;
+}(React.Component));
+export default LongHairCurly;

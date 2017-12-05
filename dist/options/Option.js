@@ -1,12 +1,23 @@
-export default class Option {
-    get key() {
-        return this._key;
-    }
-    get label() {
-        return this._label;
-    }
-    constructor({ key, label }) {
+var Option = /** @class */ (function () {
+    function Option(_a) {
+        var key = _a.key, label = _a.label;
         this._key = key;
         this._label = label;
     }
-}
+    Object.defineProperty(Option.prototype, "key", {
+        get: function () {
+            return this._key;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Option.prototype, "label", {
+        get: function () {
+            return this._label;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return Option;
+}());
+export default Option;

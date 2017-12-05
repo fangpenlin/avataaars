@@ -1,15 +1,27 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 import * as React from 'react';
 import { uniqueId } from 'lodash';
 import FacialHair from './facialHair';
-export default class NoHair extends React.Component {
-    constructor() {
-        super(...arguments);
-        this.filter1 = uniqueId('react-filter-');
-        this.mask1 = uniqueId('react-mask-');
-        this.path1 = uniqueId('react-path-');
+var NoHair = /** @class */ (function (_super) {
+    __extends(NoHair, _super);
+    function NoHair() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.filter1 = uniqueId('react-filter-');
+        _this.mask1 = uniqueId('react-mask-');
+        _this.path1 = uniqueId('react-path-');
+        return _this;
     }
-    render() {
-        const { filter1, mask1, path1 } = this;
+    NoHair.prototype.render = function () {
+        var _a = this, filter1 = _a.filter1, mask1 = _a.mask1, path1 = _a.path1;
         return (React.createElement("g", { id: 'Top', strokeWidth: '1', fillRule: 'evenodd' },
             React.createElement("defs", null,
                 React.createElement("rect", { id: path1, x: '0', y: '0', width: '264', height: '280' }),
@@ -22,10 +34,12 @@ export default class NoHair extends React.Component {
             React.createElement("mask", { id: mask1, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path1 })),
             React.createElement("g", { id: 'Mask' }),
-            React.createElement("g", { id: 'Top/No-Hair', mask: `url(#${mask1})` },
+            React.createElement("g", { id: 'Top/No-Hair', mask: "url(#" + mask1 + ")" },
                 React.createElement("g", { transform: 'translate(-1.000000, 0.000000)' },
                     React.createElement(FacialHair, null),
                     this.props.children))));
-    }
-}
-NoHair.optionValue = 'NoHair';
+    };
+    NoHair.optionValue = 'NoHair';
+    return NoHair;
+}(React.Component));
+export default NoHair;

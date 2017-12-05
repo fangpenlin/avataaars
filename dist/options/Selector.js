@@ -1,67 +1,85 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 import * as PropTypes from 'prop-types';
 import * as React from 'react';
 import OptionContext from './OptionContext';
 function getComponentOptionValue(component) {
-    const optionValue = component.optionValue;
+    var optionValue = component.optionValue;
     if (!optionValue) {
-        throw new Error(`optionValue should be provided for ${component}`);
+        throw new Error("optionValue should be provided for " + component);
     }
     return optionValue;
 }
-export default class Selector extends React.Component {
-    constructor() {
-        super(...arguments);
-        this.optionContextUpdate = () => {
-            this.forceUpdate();
+var Selector = /** @class */ (function (_super) {
+    __extends(Selector, _super);
+    function Selector() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.optionContextUpdate = function () {
+            _this.forceUpdate();
         };
+        return _this;
     }
-    get optionContext() {
-        return this.context.optionContext;
-    }
-    componentWillMount() {
-        const { option, defaultOption } = this.props;
-        const { optionContext } = this;
-        const defaultValue = getComponentOptionValue(defaultOption);
+    Object.defineProperty(Selector.prototype, "optionContext", {
+        get: function () {
+            return this.context.optionContext;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Selector.prototype.componentWillMount = function () {
+        var _a = this.props, option = _a.option, defaultOption = _a.defaultOption;
+        var optionContext = this.optionContext;
+        var defaultValue = getComponentOptionValue(defaultOption);
         optionContext.addStateChangeListener(this.optionContextUpdate);
         optionContext.optionEnter(option.key);
-        const optionState = optionContext.getOptionState(option.key);
+        var optionState = optionContext.getOptionState(option.key);
         this.updateOptionValues();
         if (optionState) {
             optionContext.setDefaultValue(option.key, defaultValue);
         }
-    }
-    componentWillUpdate(nextProps) {
+    };
+    Selector.prototype.componentWillUpdate = function (nextProps) {
         this.updateOptionValues(nextProps);
-    }
-    componentWillUnmount() {
+    };
+    Selector.prototype.componentWillUnmount = function () {
         this.optionContext.removeStateChangeListener(this.optionContextUpdate);
         this.optionContext.optionExit(this.props.option.key);
-    }
-    render() {
-        let result = null;
-        const { option, children } = this.props;
-        const value = this.optionContext.getValue(option.key);
-        React.Children.forEach(children, child => {
+    };
+    Selector.prototype.render = function () {
+        var result = null;
+        var _a = this.props, option = _a.option, children = _a.children;
+        var value = this.optionContext.getValue(option.key);
+        React.Children.forEach(children, function (child) {
             if (getComponentOptionValue(child.type) === value) {
                 result = child;
             }
         });
         return result;
-    }
-    updateOptionValues(nextProps) {
+    };
+    Selector.prototype.updateOptionValues = function (nextProps) {
         if (nextProps && this.props.children === nextProps.children) {
             return;
         }
-        const { option, children } = this.props;
-        const values = React.Children.map(children, 
+        var _a = this.props, option = _a.option, children = _a.children;
+        var values = React.Children.map(children, 
         // TODO: also validate and throw error if we don't see optionValue
-            child => getComponentOptionValue(child.type));
+        function (child) { return getComponentOptionValue(child.type); });
         if (new Set(values).size !== values.length) {
             throw new Error('Duplicate values');
         }
         this.optionContext.setOptions(option.key, values);
-    }
-}
-Selector.contextTypes = {
-    optionContext: PropTypes.instanceOf(OptionContext)
-};
+    };
+    Selector.contextTypes = {
+        optionContext: PropTypes.instanceOf(OptionContext)
+    };
+    return Selector;
+}(React.Component));
+export default Selector;

@@ -1,17 +1,29 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 import * as React from 'react';
 import { uniqueId } from 'lodash';
 import FacialHair from './facialHair';
 import HairColor from './HairColor';
-export default class LongHairMiaWallace extends React.Component {
-    constructor() {
-        super(...arguments);
-        this.mask1 = uniqueId('react-mask-');
-        this.mask2 = uniqueId('react-mask-');
-        this.path1 = uniqueId('react-path-');
-        this.path2 = uniqueId('react-path-');
+var LongHairMiaWallace = /** @class */ (function (_super) {
+    __extends(LongHairMiaWallace, _super);
+    function LongHairMiaWallace() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.mask1 = uniqueId('react-mask-');
+        _this.mask2 = uniqueId('react-mask-');
+        _this.path1 = uniqueId('react-path-');
+        _this.path2 = uniqueId('react-path-');
+        return _this;
     }
-    render() {
-        const { mask1, mask2, path1, path2 } = this;
+    LongHairMiaWallace.prototype.render = function () {
+        var _a = this, mask1 = _a.mask1, mask2 = _a.mask2, path1 = _a.path1, path2 = _a.path2;
         return (React.createElement("g", { id: 'Top', strokeWidth: '1', fillRule: 'evenodd' },
             React.createElement("defs", null,
                 React.createElement("rect", { id: path1, x: '0', y: '0', width: '264', height: '280' }),
@@ -19,7 +31,7 @@ export default class LongHairMiaWallace extends React.Component {
             React.createElement("mask", { id: mask1, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path1 })),
             React.createElement("g", { id: 'Mask' }),
-            React.createElement("g", { id: 'Top/Long-Hair/Mia-Wallace', mask: `url(#${mask1})` },
+            React.createElement("g", { id: 'Top/Long-Hair/Mia-Wallace', mask: "url(#" + mask1 + ")" },
                 React.createElement("g", { transform: 'translate(-1.000000, 0.000000)' },
                     React.createElement("path", { d: 'M69.0330562,76.212888 C81.9708809,43.1292208 95.6458945,26.5873873 110.058097,26.5873873 C110.596882,26.5873873 139.311316,26.3494141 158.112657,26.226792 C178.767149,35.5853581 193,55.3036503 193,78.114622 L193,93 L110.058097,93 L107.252975,69.820435 L103.373552,93 L69,93 L69,78.114622 C69,77.478246 69.0110772,76.844277 69.0330621,76.2128728 L69.0330562,76.212888 Z', id: 'Shadow', fillOpacity: '0.16', fill: '#000000', fillRule: 'evenodd' }),
                     React.createElement("g", { id: 'Hair', strokeWidth: '1', fill: 'none', fillRule: 'evenodd', transform: 'translate(40.000000, 19.000000)' },
@@ -29,6 +41,8 @@ export default class LongHairMiaWallace extends React.Component {
                         React.createElement(HairColor, { maskID: mask2 })),
                     React.createElement(FacialHair, null),
                     this.props.children))));
-    }
-}
-LongHairMiaWallace.optionValue = 'LongHairMiaWallace';
+    };
+    LongHairMiaWallace.optionValue = 'LongHairMiaWallace';
+    return LongHairMiaWallace;
+}(React.Component));
+export default LongHairMiaWallace;

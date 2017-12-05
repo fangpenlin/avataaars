@@ -1,3 +1,13 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 import * as React from 'react';
 import Accesories from './top/accessories';
 import Clothe from './clothes';
@@ -9,10 +19,14 @@ export var AvatarStyle;
     AvatarStyle["Circle"] = "Circle";
     AvatarStyle["Transparent"] = "Transparent";
 })(AvatarStyle || (AvatarStyle = {}));
-export default class Avatar extends React.Component {
-    render() {
-        const { avatarStyle } = this.props;
-        const circle = avatarStyle === AvatarStyle.Circle;
+var Avatar = /** @class */ (function (_super) {
+    __extends(Avatar, _super);
+    function Avatar() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Avatar.prototype.render = function () {
+        var avatarStyle = this.props.avatarStyle;
+        var circle = avatarStyle === AvatarStyle.Circle;
         return (React.createElement("svg", { style: this.props.style, width: '264px', height: '280px', viewBox: '0 0 264 280', version: '1.1', xmlns: 'http://www.w3.org/2000/svg', xmlnsXlink: 'http://www.w3.org/1999/xlink' },
             React.createElement("desc", null, "Created with getavataaars.com"),
             React.createElement("defs", null,
@@ -42,5 +56,7 @@ export default class Avatar extends React.Component {
                             React.createElement(Face, null),
                             React.createElement(Top, null,
                                 React.createElement(Accesories, null))))))));
-    }
-}
+    };
+    return Avatar;
+}(React.Component));
+export default Avatar;

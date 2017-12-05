@@ -1,3 +1,13 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 import * as React from 'react';
 import Eyepatch from './Eyepatch';
 import Hat from './Hat';
@@ -31,9 +41,13 @@ import ShortHairTheCaesar from './ShortHairTheCaesar';
 import ShortHairTheCaesarSidePart from './ShortHairTheCaesarSidePart';
 import Turban from './Turban';
 import { Selector, TopOption } from '../../options';
-export default class Top extends React.Component {
-    render() {
-        const { children } = this.props;
+var Top = /** @class */ (function (_super) {
+    __extends(Top, _super);
+    function Top() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Top.prototype.render = function () {
+        var children = this.props.children;
         return (React.createElement(Selector, { defaultOption: LongHairStraight, option: TopOption },
             React.createElement(NoHair, null, children),
             React.createElement(Eyepatch, null, children),
@@ -66,5 +80,7 @@ export default class Top extends React.Component {
             React.createElement(ShortHairSides, null, children),
             React.createElement(ShortHairTheCaesar, null, children),
             React.createElement(ShortHairTheCaesarSidePart, null, children)));
-    }
-}
+    };
+    return Top;
+}(React.Component));
+export default Top;

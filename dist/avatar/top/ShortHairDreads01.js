@@ -1,18 +1,30 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 import * as React from 'react';
 import { uniqueId } from 'lodash';
 import FacialHair from './facialHair';
 import HairColor from './HairColor';
-export default class ShortHairDreads01 extends React.Component {
-    constructor() {
-        super(...arguments);
-        this.mask1 = uniqueId('react-mask-');
-        this.mask2 = uniqueId('react-mask-');
-        this.path1 = uniqueId('react-path-');
-        this.path2 = uniqueId('react-path-');
-        this.path3 = uniqueId('react-path-');
+var ShortHairDreads01 = /** @class */ (function (_super) {
+    __extends(ShortHairDreads01, _super);
+    function ShortHairDreads01() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.mask1 = uniqueId('react-mask-');
+        _this.mask2 = uniqueId('react-mask-');
+        _this.path1 = uniqueId('react-path-');
+        _this.path2 = uniqueId('react-path-');
+        _this.path3 = uniqueId('react-path-');
+        return _this;
     }
-    render() {
-        const { mask1, mask2, path1, path2, path3 } = this;
+    ShortHairDreads01.prototype.render = function () {
+        var _a = this, mask1 = _a.mask1, mask2 = _a.mask2, path1 = _a.path1, path2 = _a.path2, path3 = _a.path3;
         return (React.createElement("g", { id: 'Top', strokeWidth: '1', fillRule: 'evenodd' },
             React.createElement("defs", null,
                 React.createElement("rect", { id: path1, x: '0', y: '0', width: '264', height: '280' }),
@@ -21,7 +33,7 @@ export default class ShortHairDreads01 extends React.Component {
             React.createElement("mask", { id: mask2, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path1 })),
             React.createElement("g", { id: 'Mask' }),
-            React.createElement("g", { id: 'Top/Short-Hair/Dreads-01', mask: `url(#${mask2})` },
+            React.createElement("g", { id: 'Top/Short-Hair/Dreads-01', mask: "url(#" + mask2 + ")" },
                 React.createElement("g", { transform: 'translate(-1.000000, 0.000000)' },
                     React.createElement(FacialHair, null),
                     React.createElement("g", { id: 'Hair', strokeWidth: '1', fillRule: 'evenodd', transform: 'translate(1.000000, 0.000000)' },
@@ -30,6 +42,8 @@ export default class ShortHairDreads01 extends React.Component {
                         React.createElement("use", { id: 'Dreads-With-Cut', fill: '#2E3257', xlinkHref: '#' + path3 }),
                         React.createElement(HairColor, { maskID: mask1 })),
                     this.props.children))));
-    }
-}
-ShortHairDreads01.optionValue = 'ShortHairDreads01';
+    };
+    ShortHairDreads01.optionValue = 'ShortHairDreads01';
+    return ShortHairDreads01;
+}(React.Component));
+export default ShortHairDreads01;
