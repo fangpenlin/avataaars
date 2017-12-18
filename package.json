@@ -1,6 +1,6 @@
 {
   "name": "avataaars",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React component for avataaars ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
