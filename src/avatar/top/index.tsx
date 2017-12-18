@@ -32,6 +32,7 @@ import ShortHairTheCaesar from './ShortHairTheCaesar'
 import ShortHairTheCaesarSidePart from './ShortHairTheCaesarSidePart'
 import Turban from './Turban'
 import WinterHat1 from './WinterHat1'
+import WinterHat2 from './WinterHat2'
 import { Selector, TopOption } from '../../options'
 
 export default class Top extends React.Component {
@@ -45,6 +46,7 @@ export default class Top extends React.Component {
         <Hijab>{children}</Hijab>
         <Turban>{children}</Turban>
         <WinterHat1>{children}</WinterHat1>
+        <WinterHat2>{children}</WinterHat2>
         <LongHairBigHair>{children}</LongHairBigHair>
         <LongHairBob>{children}</LongHairBob>
         <LongHairBun>{children}</LongHairBun>
