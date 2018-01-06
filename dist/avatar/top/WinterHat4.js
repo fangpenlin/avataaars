@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,23 +9,24 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
-import FacialHair from './facialHair';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
+var facialHair_1 = require("./facialHair");
 var WinterHat4 = /** @class */ (function (_super) {
     __extends(WinterHat4, _super);
     function WinterHat4() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = uniqueId('react-filter-');
-        _this.mask1 = uniqueId('react-mask-');
-        _this.mask2 = uniqueId('react-mask-');
-        _this.mask3 = uniqueId('react-mask-');
-        _this.mask4 = uniqueId('react-mask-');
-        _this.path1 = uniqueId('react-path-');
-        _this.path2 = uniqueId('react-path-');
-        _this.path3 = uniqueId('react-path-');
-        _this.path4 = uniqueId('react-path-');
-        _this.path5 = uniqueId('react-path-');
+        _this.filter1 = lodash_1.uniqueId('react-filter-');
+        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.mask2 = lodash_1.uniqueId('react-mask-');
+        _this.mask3 = lodash_1.uniqueId('react-mask-');
+        _this.mask4 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.path2 = lodash_1.uniqueId('react-path-');
+        _this.path3 = lodash_1.uniqueId('react-path-');
+        _this.path4 = lodash_1.uniqueId('react-path-');
+        _this.path5 = lodash_1.uniqueId('react-path-');
         return _this;
     }
     WinterHat4.prototype.render = function () {
@@ -58,10 +60,10 @@ var WinterHat4 = /** @class */ (function (_super) {
                 React.createElement("g", { id: 'hat-front' },
                     React.createElement("use", { fill: 'black', fillOpacity: '1', filter: "url(#" + path4 + ")", xlinkHref: '#' + path4 }),
                     React.createElement("use", { fill: '#F4F4F4', fillRule: 'evenodd', xlinkHref: '#' + path4 })),
-                React.createElement(FacialHair, null),
+                React.createElement(facialHair_1.default, null),
                 this.props.children)));
     };
     WinterHat4.optionValue = 'WinterHat4';
     return WinterHat4;
 }(React.Component));
-export default WinterHat4;
+exports.default = WinterHat4;
