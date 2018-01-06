@@ -6,72 +6,73 @@ export { default as Selector } from './Selector'
 
 export const TopOption = new Option({
   key: 'topType',
-  label: 'Top'
+  label: 'Top',
 })
 
 export const AccessoriesOption = new Option({
   key: 'accessoriesType',
-  label: '↳ 👓 Accessories'
+  label: '↳ 👓 Accessories',
 })
 
 export const HatColorOption = new Option({
   key: 'hatColor',
-  label: '🎨 HatColor'
+  label: '🎨 HatColor',
 })
 
 export const HairColorOption = new Option({
   key: 'hairColor',
-  label: '↳ 💈 Hair Color'
+  label: '↳ 💈 Hair Color',
 })
 
 export const FacialHairOption = new Option({
   key: 'facialHairType',
-  label: 'Facial Hair'
+  label: 'Facial Hair',
 })
 
 export const FacialHairColor = new Option({
   key: 'facialHairColor',
-  label: '↳ ✂️ Facial Hair Color'
+  label: '↳ ✂️ Facial Hair Color',
 })
 
 export const ClotheOption = new Option({
   key: 'clotheType',
-  label: '👔 Clothes'
+  label: '👔 Clothes',
 })
 
 export const ClotheColorOption = new Option({
   key: 'clotheColor',
-  label: '↳ Color Fabric'
+  label: '↳ Color Fabric',
 })
 
 export const GraphicOption = new Option({
   key: 'graphicType',
-  label: '↳ Graphic'
+  label: '↳ Graphic',
 })
 
 export const EyesOption = new Option({
   key: 'eyeType',
-  label: '👁 Eyes'
+  label: '👁 Eyes',
 })
 
 export const EyebrowOption = new Option({
   key: 'eyebrowType',
-  label: '✏️ Eyebrow'
+  label: '✏️ Eyebrow',
 })
 
 export const MouthOption = new Option({
   key: 'mouthType',
-  label: '👄 Mouth'
+  label: '👄 Mouth',
 })
 
 export const SkinOption = new Option({
   key: 'skinColor',
-  label: '🎨 Skin'
+  label: '🎨 Skin',
 })
 
 export const allOptions = [
   TopOption,
   AccessoriesOption,
+  HatColorOption,
   HairColorOption,
   FacialHairOption,
   FacialHairColor,
@@ -81,5 +82,5 @@ export const allOptions = [
   EyesOption,
   EyebrowOption,
   MouthOption,
-  SkinOption
+  SkinOption,
 ]

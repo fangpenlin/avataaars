@@ -4,6 +4,7 @@ export { default as OptionContext, OptionContextState } from './OptionContext';
 export { default as Selector } from './Selector';
 export declare const TopOption: Option;
 export declare const AccessoriesOption: Option;
+export declare const HatColorOption: Option;
 export declare const HairColorOption: Option;
 export declare const FacialHairOption: Option;
 export declare const FacialHairColor: Option;

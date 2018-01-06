@@ -2,6 +2,7 @@ import * as React from 'react'
 import { uniqueId } from 'lodash'
 
 import FacialHair from './facialHair'
+import HatColor from './HatColor'
 
 export default class WinterHat3 extends React.Component {
   static optionValue = 'WinterHat3'
@@ -66,13 +67,7 @@ export default class WinterHat3 extends React.Component {
               <use xlinkHref={'#' + path1} />
             </mask>
             <use id='hat-mask' fill='#D8D8D8' xlinkHref={'#' + path1} />
-            <g
-              id='Color/Palette/Red'
-              fill='#FF5C5C'
-              mask={`url(#${mask2})`}
-            >
-              <rect id='🖍Color' x='0' y='0' width='140' height='191' />
-            </g>
+            <HatColor maskID={mask2} defaultColor='Red' />
           </g>
           <g id='hat-front'>
             <use

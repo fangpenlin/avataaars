@@ -13,6 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var lodash_1 = require("lodash");
 var facialHair_1 = require("./facialHair");
+var HatColor_1 = require("./HatColor");
 var WinterHat2 = /** @class */ (function (_super) {
     __extends(WinterHat2, _super);
     function WinterHat2() {
@@ -46,8 +47,7 @@ var WinterHat2 = /** @class */ (function (_super) {
                     React.createElement("mask", { id: mask2, fill: 'white' },
                         React.createElement("use", { xlinkHref: '#' + path1 })),
                     React.createElement("use", { id: 'Combined-Shape', fill: '#F4F4F4', xlinkHref: '#' + path1 }),
-                    React.createElement("g", { id: 'Color/Palette/Blue-01', fill: '#65C9FF', mask: "url(#" + mask2 + ")" },
-                        React.createElement("rect", { id: '🖍Color', x: '0', y: '0', width: '149', height: '172' })),
+                    React.createElement(HatColor_1.default, { maskID: mask2, defaultColor: 'Blue01' }),
                     React.createElement("rect", { id: 'color-dark', fillOpacity: '0.2', fill: '#000000', x: '-1', y: '21', width: '146', height: '46', mask: "url(#" + mask2 + ")" }),
                     React.createElement("g", { id: 'light-triangles', transform: 'translate(29.000000, 32.000000)', fill: '#FFFFFF', fillOpacity: '0.5' },
                         React.createElement("polygon", { id: 'Triangle', transform: 'translate(12.500000, 9.000000) rotate(180.000000) translate(-12.500000, -9.000000) ', points: '12.5 0 25 18 0 18' }),

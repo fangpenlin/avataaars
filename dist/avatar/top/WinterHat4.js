@@ -13,6 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var lodash_1 = require("lodash");
 var facialHair_1 = require("./facialHair");
+var HatColor_1 = require("./HatColor");
 var WinterHat4 = /** @class */ (function (_super) {
     __extends(WinterHat4, _super);
     function WinterHat4() {
@@ -49,8 +50,7 @@ var WinterHat4 = /** @class */ (function (_super) {
                     React.createElement("mask", { id: mask2, fill: 'white' },
                         React.createElement("use", { xlinkHref: '#' + path1 })),
                     React.createElement("use", { id: 'hat-mask', fill: '#D8D8D8', xlinkHref: '#' + path1 }),
-                    React.createElement("g", { id: 'Color/Palette/Red', mask: "url(#" + mask2 + ")", fill: '#FF5C5C' },
-                        React.createElement("rect", { id: '🖍Color', x: '0', y: '0', width: '180', height: '191' })),
+                    React.createElement(HatColor_1.default, { maskID: mask2, defaultColor: 'Red' }),
                     React.createElement("mask", { id: mask3, fill: 'white' },
                         React.createElement("use", { xlinkHref: '#' + path2 })),
                     React.createElement("use", { id: 'shadow', fillOpacity: '0.24', fill: '#000000', xlinkHref: '#' + path2 }),
