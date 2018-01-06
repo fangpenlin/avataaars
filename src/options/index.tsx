@@ -14,6 +14,11 @@ export const AccessoriesOption = new Option({
   label: '↳ 👓 Accessories'
 })
 
+export const HatColorOption = new Option({
+  key: 'hatColor',
+  label: '🎨 HatColor'
+})
+
 export const HairColorOption = new Option({
   key: 'hairColor',
   label: '↳ 💈 Hair Color'
