@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,7 +9,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
 var RaisedExcited = /** @class */ (function (_super) {
     __extends(RaisedExcited, _super);
     function RaisedExcited() {
@@ -23,4 +25,4 @@ var RaisedExcited = /** @class */ (function (_super) {
     RaisedExcited.optionValue = 'RaisedExcited';
     return RaisedExcited;
 }(React.Component));
-export default RaisedExcited;
+exports.default = RaisedExcited;

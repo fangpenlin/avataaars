@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,7 +9,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
 var FrownNatural = /** @class */ (function (_super) {
     __extends(FrownNatural, _super);
     function FrownNatural() {
@@ -22,4 +24,4 @@ var FrownNatural = /** @class */ (function (_super) {
     FrownNatural.optionValue = 'FrownNatural';
     return FrownNatural;
 }(React.Component));
-export default FrownNatural;
+exports.default = FrownNatural;

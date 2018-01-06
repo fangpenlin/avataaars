@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,16 +9,17 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
-import FacialHair from './facialHair';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
+var facialHair_1 = require("./facialHair");
 var NoHair = /** @class */ (function (_super) {
     __extends(NoHair, _super);
     function NoHair() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = uniqueId('react-filter-');
-        _this.mask1 = uniqueId('react-mask-');
-        _this.path1 = uniqueId('react-path-');
+        _this.filter1 = lodash_1.uniqueId('react-filter-');
+        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
         return _this;
     }
     NoHair.prototype.render = function () {
@@ -36,10 +38,10 @@ var NoHair = /** @class */ (function (_super) {
             React.createElement("g", { id: 'Mask' }),
             React.createElement("g", { id: 'Top/No-Hair', mask: "url(#" + mask1 + ")" },
                 React.createElement("g", { transform: 'translate(-1.000000, 0.000000)' },
-                    React.createElement(FacialHair, null),
+                    React.createElement(facialHair_1.default, null),
                     this.props.children))));
     };
     NoHair.optionValue = 'NoHair';
     return NoHair;
 }(React.Component));
-export default NoHair;
+exports.default = NoHair;

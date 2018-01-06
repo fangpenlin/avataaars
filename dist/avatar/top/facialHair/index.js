@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,28 +9,29 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import BeardLight from './BeardLight';
-import BeardMagestic from './BeardMagestic';
-import BeardMedium from './BeardMedium';
-import Blank from './Blank';
-import MoustacheFancy from './MoustacheFancy';
-import MoustacheMagnum from './MoustacheMagnum';
-import { FacialHairOption, Selector } from '../../../options';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var BeardLight_1 = require("./BeardLight");
+var BeardMagestic_1 = require("./BeardMagestic");
+var BeardMedium_1 = require("./BeardMedium");
+var Blank_1 = require("./Blank");
+var MoustacheFancy_1 = require("./MoustacheFancy");
+var MoustacheMagnum_1 = require("./MoustacheMagnum");
+var options_1 = require("../../../options");
 var FacialHair = /** @class */ (function (_super) {
     __extends(FacialHair, _super);
     function FacialHair() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     FacialHair.prototype.render = function () {
-        return (React.createElement(Selector, { option: FacialHairOption, defaultOption: Blank },
-            React.createElement(Blank, null),
-            React.createElement(BeardMedium, null),
-            React.createElement(BeardLight, null),
-            React.createElement(BeardMagestic, null),
-            React.createElement(MoustacheFancy, null),
-            React.createElement(MoustacheMagnum, null)));
+        return (React.createElement(options_1.Selector, { option: options_1.FacialHairOption, defaultOption: Blank_1.default },
+            React.createElement(Blank_1.default, null),
+            React.createElement(BeardMedium_1.default, null),
+            React.createElement(BeardLight_1.default, null),
+            React.createElement(BeardMagestic_1.default, null),
+            React.createElement(MoustacheFancy_1.default, null),
+            React.createElement(MoustacheMagnum_1.default, null)));
     };
     return FacialHair;
 }(React.Component));
-export default FacialHair;
+exports.default = FacialHair;

@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,8 +9,9 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { Selector, SkinOption } from '../options';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var options_1 = require("../options");
 function makeColor(name, color) {
     var ColorComponent = /** @class */ (function (_super) {
         __extends(ColorComponent, _super);
@@ -41,7 +43,7 @@ var Skin = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Skin.prototype.render = function () {
-        return (React.createElement(Selector, { option: SkinOption, defaultOption: Light },
+        return (React.createElement(options_1.Selector, { option: options_1.SkinOption, defaultOption: Light },
             React.createElement(Tanned, { maskID: this.props.maskID }),
             React.createElement(Yellow, { maskID: this.props.maskID }),
             React.createElement(Pale, { maskID: this.props.maskID }),
@@ -52,4 +54,4 @@ var Skin = /** @class */ (function (_super) {
     };
     return Skin;
 }(React.Component));
-export default Skin;
+exports.default = Skin;

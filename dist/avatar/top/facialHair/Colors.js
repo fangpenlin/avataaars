@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,8 +9,9 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { FacialHairColor, Selector } from '../../../options';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var options_1 = require("../../../options");
 function makeColor(name, color) {
     var ColorComponent = /** @class */ (function (_super) {
         __extends(ColorComponent, _super);
@@ -42,7 +44,7 @@ var Colors = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Colors.prototype.render = function () {
-        return (React.createElement(Selector, { option: FacialHairColor, defaultOption: BrownDark },
+        return (React.createElement(options_1.Selector, { option: options_1.FacialHairColor, defaultOption: BrownDark },
             React.createElement(Auburn, { maskID: this.props.maskID }),
             React.createElement(Black, { maskID: this.props.maskID }),
             React.createElement(Blonde, { maskID: this.props.maskID }),
@@ -54,4 +56,4 @@ var Colors = /** @class */ (function (_super) {
     };
     return Colors;
 }(React.Component));
-export default Colors;
+exports.default = Colors;

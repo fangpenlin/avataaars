@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,19 +9,20 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
-import FacialHair from './facialHair';
-import HairColor from './HairColor';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
+var facialHair_1 = require("./facialHair");
+var HairColor_1 = require("./HairColor");
 var LongHairStraightStrand = /** @class */ (function (_super) {
     __extends(LongHairStraightStrand, _super);
     function LongHairStraightStrand() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.mask1 = uniqueId('react-mask-');
-        _this.mask2 = uniqueId('react-mask-');
-        _this.path1 = uniqueId('react-path-');
-        _this.path2 = uniqueId('react-path-');
-        _this.path3 = uniqueId('react-path-');
+        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.mask2 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.path2 = lodash_1.uniqueId('react-path-');
+        _this.path3 = lodash_1.uniqueId('react-path-');
         return _this;
     }
     LongHairStraightStrand.prototype.render = function () {
@@ -39,12 +41,12 @@ var LongHairStraightStrand = /** @class */ (function (_super) {
                         React.createElement("mask", { id: mask2, fill: 'white' },
                             React.createElement("use", { xlinkHref: '#' + path2 })),
                         React.createElement("use", { fill: '#ECC797', xlinkHref: '#' + path2 }),
-                        React.createElement(HairColor, { maskID: mask2 })),
+                        React.createElement(HairColor_1.default, { maskID: mask2 })),
                     React.createElement("path", { d: 'M59,102.418954 L59,108.837908 C78.9453743,105.750496 99.5895621,88.3902571 111.046195,62.6582378 C111.455505,61.738913 111.849027,60.8180234 112.226862,59.8960843 C116.231662,70.5822127 123.321236,78.70828 133.495584,84.2742862 C134.956498,86.4697241 136.497401,88.5566361 138.118291,90.5350224 C125.443111,85.0120855 116.812635,76.1324394 112.226862,63.8960843 C111.849027,64.8180234 111.455505,65.738913 111.046195,66.6582378 C99.5895621,92.3902571 78.9453743,109.750496 59,112.837908 L59,102.418954 Z M207,101.140388 L207,110.280776 C192.046922,109.412723 173.901259,103.744646 156.14893,93.4953343 C145.87623,87.5643877 136.866205,80.7523483 129.502994,73.639773 C128.137922,71.1289501 126.860094,68.4997578 125.669508,65.752196 C133.646468,74.2579416 144.017178,82.4910638 156.14893,89.4953343 C173.901259,99.7446457 192.046922,105.412723 207,106.280776 L207,101.140388 Z', id: 'Shadow', fillOpacity: '0.16', fill: '#000000', fillRule: 'evenodd' }),
-                    React.createElement(FacialHair, null),
+                    React.createElement(facialHair_1.default, null),
                     this.props.children))));
     };
     LongHairStraightStrand.optionValue = 'LongHairStraightStrand';
     return LongHairStraightStrand;
 }(React.Component));
-export default LongHairStraightStrand;
+exports.default = LongHairStraightStrand;

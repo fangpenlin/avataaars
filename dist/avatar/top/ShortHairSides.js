@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,19 +9,20 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
-import FacialHair from './facialHair';
-import HairColor from './HairColor';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
+var facialHair_1 = require("./facialHair");
+var HairColor_1 = require("./HairColor");
 var ShortHairSides = /** @class */ (function (_super) {
     __extends(ShortHairSides, _super);
     function ShortHairSides() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.mask1 = uniqueId('react-mask-');
-        _this.mask2 = uniqueId('react-mask-');
-        _this.path1 = uniqueId('react-path-');
-        _this.path2 = uniqueId('react-path-');
-        _this.path3 = uniqueId('react-path-');
+        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.mask2 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.path2 = lodash_1.uniqueId('react-path-');
+        _this.path3 = lodash_1.uniqueId('react-path-');
         return _this;
     }
     ShortHairSides.prototype.render = function () {
@@ -35,15 +37,15 @@ var ShortHairSides = /** @class */ (function (_super) {
             React.createElement("g", { id: 'Mask' }),
             React.createElement("g", { id: 'Top/Short-Hair/Sides', mask: "url(#" + mask2 + ")" },
                 React.createElement("g", { transform: 'translate(-1.000000, 0.000000)' },
-                    React.createElement(FacialHair, null),
+                    React.createElement(facialHair_1.default, null),
                     React.createElement("g", { id: 'Hair', strokeWidth: '1', fillRule: 'evenodd', transform: 'translate(70.000000, 74.000000)' },
                         React.createElement("mask", { id: mask1, fill: 'white' },
                             React.createElement("use", { xlinkHref: '#' + path3 })),
                         React.createElement("use", { id: 'Sides', fill: '#9E7A7A', xlinkHref: '#' + path3 }),
-                        React.createElement(HairColor, { maskID: mask1 })),
+                        React.createElement(HairColor_1.default, { maskID: mask1 })),
                     this.props.children))));
     };
     ShortHairSides.optionValue = 'ShortHairSides';
     return ShortHairSides;
 }(React.Component));
-export default ShortHairSides;
+exports.default = ShortHairSides;

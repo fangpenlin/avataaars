@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,18 +9,19 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
-import FacialHair from './facialHair';
-import HairColor from './HairColor';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
+var facialHair_1 = require("./facialHair");
+var HairColor_1 = require("./HairColor");
 var LongHairFroBand = /** @class */ (function (_super) {
     __extends(LongHairFroBand, _super);
     function LongHairFroBand() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.mask1 = uniqueId('react-mask-');
-        _this.mask2 = uniqueId('react-mask-');
-        _this.path1 = uniqueId('react-path-');
-        _this.path2 = uniqueId('react-path-');
+        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.mask2 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.path2 = lodash_1.uniqueId('react-path-');
         return _this;
     }
     LongHairFroBand.prototype.render = function () {
@@ -36,12 +38,12 @@ var LongHairFroBand = /** @class */ (function (_super) {
                     React.createElement("mask", { id: mask2, fill: 'white' },
                         React.createElement("use", { xlinkHref: '#' + path2 })),
                     React.createElement("use", { id: 'Hair', stroke: 'none', fill: '#314756', fillRule: 'evenodd', xlinkHref: '#' + path2 }),
-                    React.createElement(HairColor, { maskID: mask2 }),
+                    React.createElement(HairColor_1.default, { maskID: mask2 }),
                     React.createElement("path", { d: 'M76.6313898,98.975 C76.2155465,96.423245 76,93.8109442 76,91.1521739 C76,62.3493236 101.295912,39 132.5,39 C163.704088,39 189,62.3493236 189,91.1521739 C189,93.8109442 188.784453,96.423245 188.36861,98.975 C184.279562,73.883217 160.823662,54.6456522 132.5,54.6456522 C104.176338,54.6456522 80.7204382,73.883217 76.6313898,98.975 Z', id: 'Band', stroke: 'none', fill: '#92D9FF', fillRule: 'evenodd' }),
-                    React.createElement(FacialHair, null),
+                    React.createElement(facialHair_1.default, null),
                     this.props.children))));
     };
     LongHairFroBand.optionValue = 'LongHairFroBand';
     return LongHairFroBand;
 }(React.Component));
-export default LongHairFroBand;
+exports.default = LongHairFroBand;

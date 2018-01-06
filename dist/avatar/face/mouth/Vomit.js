@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,16 +9,17 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
 var Vomit = /** @class */ (function (_super) {
     __extends(Vomit, _super);
     function Vomit() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = uniqueId('react-path-');
-        _this.path2 = uniqueId('react-path-');
-        _this.mask1 = uniqueId('react-mask-');
-        _this.filter1 = uniqueId('react-filter-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.path2 = lodash_1.uniqueId('react-path-');
+        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.filter1 = lodash_1.uniqueId('react-filter-');
         return _this;
     }
     Vomit.prototype.render = function () {
@@ -41,4 +43,4 @@ var Vomit = /** @class */ (function (_super) {
     Vomit.optionValue = 'Vomit';
     return Vomit;
 }(React.Component));
-export default Vomit;
+exports.default = Vomit;

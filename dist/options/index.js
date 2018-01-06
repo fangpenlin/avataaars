@@ -1,66 +1,71 @@
-import Option from './Option';
-export { default as Option } from './Option';
-export { default as OptionContext } from './OptionContext';
-export { default as Selector } from './Selector';
-export var TopOption = new Option({
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Option_1 = require("./Option");
+var Option_2 = require("./Option");
+exports.Option = Option_2.default;
+var OptionContext_1 = require("./OptionContext");
+exports.OptionContext = OptionContext_1.default;
+var Selector_1 = require("./Selector");
+exports.Selector = Selector_1.default;
+exports.TopOption = new Option_1.default({
     key: 'topType',
     label: 'Top'
 });
-export var AccessoriesOption = new Option({
+exports.AccessoriesOption = new Option_1.default({
     key: 'accessoriesType',
     label: '↳ 👓 Accessories'
 });
-export var HairColorOption = new Option({
+exports.HairColorOption = new Option_1.default({
     key: 'hairColor',
     label: '↳ 💈 Hair Color'
 });
-export var FacialHairOption = new Option({
+exports.FacialHairOption = new Option_1.default({
     key: 'facialHairType',
     label: 'Facial Hair'
 });
-export var FacialHairColor = new Option({
+exports.FacialHairColor = new Option_1.default({
     key: 'facialHairColor',
     label: '↳ ✂️ Facial Hair Color'
 });
-export var ClotheOption = new Option({
+exports.ClotheOption = new Option_1.default({
     key: 'clotheType',
     label: '👔 Clothes'
 });
-export var ClotheColorOption = new Option({
+exports.ClotheColorOption = new Option_1.default({
     key: 'clotheColor',
     label: '↳ Color Fabric'
 });
-export var GraphicOption = new Option({
+exports.GraphicOption = new Option_1.default({
     key: 'graphicType',
     label: '↳ Graphic'
 });
-export var EyesOption = new Option({
+exports.EyesOption = new Option_1.default({
     key: 'eyeType',
     label: '👁 Eyes'
 });
-export var EyebrowOption = new Option({
+exports.EyebrowOption = new Option_1.default({
     key: 'eyebrowType',
     label: '✏️ Eyebrow'
 });
-export var MouthOption = new Option({
+exports.MouthOption = new Option_1.default({
     key: 'mouthType',
     label: '👄 Mouth'
 });
-export var SkinOption = new Option({
+exports.SkinOption = new Option_1.default({
     key: 'skinColor',
     label: '🎨 Skin'
 });
-export var allOptions = [
-    TopOption,
-    AccessoriesOption,
-    HairColorOption,
-    FacialHairOption,
-    FacialHairColor,
-    ClotheOption,
-    ClotheColorOption,
-    GraphicOption,
-    EyesOption,
-    EyebrowOption,
-    MouthOption,
-    SkinOption
+exports.allOptions = [
+    exports.TopOption,
+    exports.AccessoriesOption,
+    exports.HairColorOption,
+    exports.FacialHairOption,
+    exports.FacialHairColor,
+    exports.ClotheOption,
+    exports.ClotheColorOption,
+    exports.GraphicOption,
+    exports.EyesOption,
+    exports.EyebrowOption,
+    exports.MouthOption,
+    exports.SkinOption
 ];

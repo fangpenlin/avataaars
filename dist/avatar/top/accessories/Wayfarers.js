@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,16 +9,17 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
 var Wayfarers = /** @class */ (function (_super) {
     __extends(Wayfarers, _super);
     function Wayfarers() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = uniqueId('react-path-');
-        _this.path2 = uniqueId('react-path-');
-        _this.filter1 = uniqueId('react-filter-');
-        _this.linearGradient1 = uniqueId('react-linear-gradient-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.path2 = lodash_1.uniqueId('react-path-');
+        _this.filter1 = lodash_1.uniqueId('react-filter-');
+        _this.linearGradient1 = lodash_1.uniqueId('react-linear-gradient-');
         return _this;
     }
     Wayfarers.prototype.render = function () {
@@ -50,4 +52,4 @@ var Wayfarers = /** @class */ (function (_super) {
     Wayfarers.optionValue = 'Wayfarers';
     return Wayfarers;
 }(React.Component));
-export default Wayfarers;
+exports.default = Wayfarers;

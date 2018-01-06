@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Option = /** @class */ (function () {
     function Option(_a) {
         var key = _a.key, label = _a.label;
@@ -20,4 +22,4 @@ var Option = /** @class */ (function () {
     });
     return Option;
 }());
-export default Option;
+exports.default = Option;

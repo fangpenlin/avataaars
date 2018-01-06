@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,23 +9,24 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
-import FacialHair from './facialHair';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
+var facialHair_1 = require("./facialHair");
 var LongHairFrida = /** @class */ (function (_super) {
     __extends(LongHairFrida, _super);
     function LongHairFrida() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = uniqueId('react-filter-');
-        _this.filter2 = uniqueId('react-filter-');
-        _this.filter3 = uniqueId('react-filter-');
-        _this.filter4 = uniqueId('react-filter-');
-        _this.filter5 = uniqueId('react-filter-');
-        _this.filter6 = uniqueId('react-filter-');
-        _this.filter7 = uniqueId('react-filter-');
-        _this.mask1 = uniqueId('react-mask-');
-        _this.path1 = uniqueId('react-path-');
-        _this.path2 = uniqueId('react-path-');
+        _this.filter1 = lodash_1.uniqueId('react-filter-');
+        _this.filter2 = lodash_1.uniqueId('react-filter-');
+        _this.filter3 = lodash_1.uniqueId('react-filter-');
+        _this.filter4 = lodash_1.uniqueId('react-filter-');
+        _this.filter5 = lodash_1.uniqueId('react-filter-');
+        _this.filter6 = lodash_1.uniqueId('react-filter-');
+        _this.filter7 = lodash_1.uniqueId('react-filter-');
+        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.path2 = lodash_1.uniqueId('react-path-');
         return _this;
     }
     LongHairFrida.prototype.render = function () {
@@ -107,10 +109,10 @@ var LongHairFrida = /** @class */ (function (_super) {
                     React.createElement("g", { id: 'Arete', strokeWidth: '1', fillRule: 'evenodd', transform: 'translate(182.000000, 129.000000)' },
                         React.createElement("rect", { id: 'Cadenita', fill: '#E6E6E6', x: '9', y: '0', width: '2', height: '39', rx: '1' }),
                         React.createElement("polygon", { id: 'Rayo', fill: '#9177FF', fillRule: 'nonzero', points: '20 37 10.57 37 17 20 6 20 0 41 8.636 41 4 60' })),
-                    React.createElement(FacialHair, null),
+                    React.createElement(facialHair_1.default, null),
                     this.props.children))));
     };
     LongHairFrida.optionValue = 'LongHairFrida';
     return LongHairFrida;
 }(React.Component));
-export default LongHairFrida;
+exports.default = LongHairFrida;

@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,13 +9,14 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
 var Kurt = /** @class */ (function (_super) {
     __extends(Kurt, _super);
     function Kurt() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = uniqueId('react-filter-');
+        _this.filter1 = lodash_1.uniqueId('react-filter-');
         return _this;
     }
     Kurt.prototype.render = function () {
@@ -35,4 +37,4 @@ var Kurt = /** @class */ (function (_super) {
     Kurt.optionValue = 'Kurt';
     return Kurt;
 }(React.Component));
-export default Kurt;
+exports.default = Kurt;

@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,15 +9,16 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
-import Colors from './Colors';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
+var Colors_1 = require("./Colors");
 var ShirtCrewNeck = /** @class */ (function (_super) {
     __extends(ShirtCrewNeck, _super);
     function ShirtCrewNeck() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = uniqueId('react-path-');
-        _this.mask1 = uniqueId('react-mask-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.mask1 = lodash_1.uniqueId('react-mask-');
         return _this;
     }
     ShirtCrewNeck.prototype.render = function () {
@@ -27,7 +29,7 @@ var ShirtCrewNeck = /** @class */ (function (_super) {
             React.createElement("mask", { id: mask1, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path1 })),
             React.createElement("use", { id: 'Clothes', fill: '#E6E6E6', fillRule: 'evenodd', xlinkHref: '#' + path1 }),
-            React.createElement(Colors, { maskID: mask1 }),
+            React.createElement(Colors_1.default, { maskID: mask1 }),
             React.createElement("g", { id: 'Shadowy', opacity: '0.599999964', strokeWidth: '1', fillRule: 'evenodd', mask: "url(#" + mask1 + ")", fillOpacity: '0.16', fill: '#000000' },
                 React.createElement("g", { transform: 'translate(92.000000, 4.000000)', id: 'Hola-👋🏼' },
                     React.createElement("ellipse", { cx: '40.5', cy: '27.8476251', rx: '39.6351047', ry: '26.9138272' })))));
@@ -35,4 +37,4 @@ var ShirtCrewNeck = /** @class */ (function (_super) {
     ShirtCrewNeck.optionValue = 'ShirtCrewNeck';
     return ShirtCrewNeck;
 }(React.Component));
-export default ShirtCrewNeck;
+exports.default = ShirtCrewNeck;

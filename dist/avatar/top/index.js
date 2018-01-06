@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,39 +9,40 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import Eyepatch from './Eyepatch';
-import Hat from './Hat';
-import Hijab from './Hijab';
-import LongHairBigHair from './LongHairBigHair';
-import LongHairBob from './LongHairBob';
-import LongHairBun from './LongHairBun';
-import LongHairCurly from './LongHairCurly';
-import LongHairCurvy from './LongHairCurvy';
-import LongHairDreads from './LongHairDreads';
-import LongHairFrida from './LongHairFrida';
-import LongHairFro from './LongHairFro';
-import LongHairFroBand from './LongHairFroBand';
-import LongHairMiaWallace from './LongHairMiaWallace';
-import LongHairNotTooLong from './LongHairNotTooLong';
-import LongHairShavedSides from './LongHairShavedSides';
-import LongHairStraight from './LongHairStraight';
-import LongHairStraight2 from './LongHairStraight2';
-import LongHairStraightStrand from './LongHairStraightStrand';
-import NoHair from './NoHair';
-import ShortHairDreads01 from './ShortHairDreads01';
-import ShortHairDreads02 from './ShortHairDreads02';
-import ShortHairFrizzle from './ShortHairFrizzle';
-import ShortHairShaggyMullet from './ShortHairShaggyMullet';
-import ShortHairShortCurly from './ShortHairShortCurly';
-import ShortHairShortFlat from './ShortHairShortFlat';
-import ShortHairShortRound from './ShortHairShortRound';
-import ShortHairShortWaved from './ShortHairShortWaved';
-import ShortHairSides from './ShortHairSides';
-import ShortHairTheCaesar from './ShortHairTheCaesar';
-import ShortHairTheCaesarSidePart from './ShortHairTheCaesarSidePart';
-import Turban from './Turban';
-import { Selector, TopOption } from '../../options';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var Eyepatch_1 = require("./Eyepatch");
+var Hat_1 = require("./Hat");
+var Hijab_1 = require("./Hijab");
+var LongHairBigHair_1 = require("./LongHairBigHair");
+var LongHairBob_1 = require("./LongHairBob");
+var LongHairBun_1 = require("./LongHairBun");
+var LongHairCurly_1 = require("./LongHairCurly");
+var LongHairCurvy_1 = require("./LongHairCurvy");
+var LongHairDreads_1 = require("./LongHairDreads");
+var LongHairFrida_1 = require("./LongHairFrida");
+var LongHairFro_1 = require("./LongHairFro");
+var LongHairFroBand_1 = require("./LongHairFroBand");
+var LongHairMiaWallace_1 = require("./LongHairMiaWallace");
+var LongHairNotTooLong_1 = require("./LongHairNotTooLong");
+var LongHairShavedSides_1 = require("./LongHairShavedSides");
+var LongHairStraight_1 = require("./LongHairStraight");
+var LongHairStraight2_1 = require("./LongHairStraight2");
+var LongHairStraightStrand_1 = require("./LongHairStraightStrand");
+var NoHair_1 = require("./NoHair");
+var ShortHairDreads01_1 = require("./ShortHairDreads01");
+var ShortHairDreads02_1 = require("./ShortHairDreads02");
+var ShortHairFrizzle_1 = require("./ShortHairFrizzle");
+var ShortHairShaggyMullet_1 = require("./ShortHairShaggyMullet");
+var ShortHairShortCurly_1 = require("./ShortHairShortCurly");
+var ShortHairShortFlat_1 = require("./ShortHairShortFlat");
+var ShortHairShortRound_1 = require("./ShortHairShortRound");
+var ShortHairShortWaved_1 = require("./ShortHairShortWaved");
+var ShortHairSides_1 = require("./ShortHairSides");
+var ShortHairTheCaesar_1 = require("./ShortHairTheCaesar");
+var ShortHairTheCaesarSidePart_1 = require("./ShortHairTheCaesarSidePart");
+var Turban_1 = require("./Turban");
+var options_1 = require("../../options");
 var Top = /** @class */ (function (_super) {
     __extends(Top, _super);
     function Top() {
@@ -48,39 +50,39 @@ var Top = /** @class */ (function (_super) {
     }
     Top.prototype.render = function () {
         var children = this.props.children;
-        return (React.createElement(Selector, { defaultOption: LongHairStraight, option: TopOption },
-            React.createElement(NoHair, null, children),
-            React.createElement(Eyepatch, null, children),
-            React.createElement(Hat, null, children),
-            React.createElement(Hijab, null, children),
-            React.createElement(Turban, null, children),
-            React.createElement(LongHairBigHair, null, children),
-            React.createElement(LongHairBob, null, children),
-            React.createElement(LongHairBun, null, children),
-            React.createElement(LongHairCurly, null, children),
-            React.createElement(LongHairCurvy, null, children),
-            React.createElement(LongHairDreads, null, children),
-            React.createElement(LongHairFrida, null, children),
-            React.createElement(LongHairFro, null, children),
-            React.createElement(LongHairFroBand, null, children),
-            React.createElement(LongHairNotTooLong, null, children),
-            React.createElement(LongHairShavedSides, null, children),
-            React.createElement(LongHairMiaWallace, null, children),
-            React.createElement(LongHairStraight, null, children),
-            React.createElement(LongHairStraight2, null, children),
-            React.createElement(LongHairStraightStrand, null, children),
-            React.createElement(ShortHairDreads01, null, children),
-            React.createElement(ShortHairDreads02, null, children),
-            React.createElement(ShortHairFrizzle, null, children),
-            React.createElement(ShortHairShaggyMullet, null, children),
-            React.createElement(ShortHairShortCurly, null, children),
-            React.createElement(ShortHairShortFlat, null, children),
-            React.createElement(ShortHairShortRound, null, children),
-            React.createElement(ShortHairShortWaved, null, children),
-            React.createElement(ShortHairSides, null, children),
-            React.createElement(ShortHairTheCaesar, null, children),
-            React.createElement(ShortHairTheCaesarSidePart, null, children)));
+        return (React.createElement(options_1.Selector, { defaultOption: LongHairStraight_1.default, option: options_1.TopOption },
+            React.createElement(NoHair_1.default, null, children),
+            React.createElement(Eyepatch_1.default, null, children),
+            React.createElement(Hat_1.default, null, children),
+            React.createElement(Hijab_1.default, null, children),
+            React.createElement(Turban_1.default, null, children),
+            React.createElement(LongHairBigHair_1.default, null, children),
+            React.createElement(LongHairBob_1.default, null, children),
+            React.createElement(LongHairBun_1.default, null, children),
+            React.createElement(LongHairCurly_1.default, null, children),
+            React.createElement(LongHairCurvy_1.default, null, children),
+            React.createElement(LongHairDreads_1.default, null, children),
+            React.createElement(LongHairFrida_1.default, null, children),
+            React.createElement(LongHairFro_1.default, null, children),
+            React.createElement(LongHairFroBand_1.default, null, children),
+            React.createElement(LongHairNotTooLong_1.default, null, children),
+            React.createElement(LongHairShavedSides_1.default, null, children),
+            React.createElement(LongHairMiaWallace_1.default, null, children),
+            React.createElement(LongHairStraight_1.default, null, children),
+            React.createElement(LongHairStraight2_1.default, null, children),
+            React.createElement(LongHairStraightStrand_1.default, null, children),
+            React.createElement(ShortHairDreads01_1.default, null, children),
+            React.createElement(ShortHairDreads02_1.default, null, children),
+            React.createElement(ShortHairFrizzle_1.default, null, children),
+            React.createElement(ShortHairShaggyMullet_1.default, null, children),
+            React.createElement(ShortHairShortCurly_1.default, null, children),
+            React.createElement(ShortHairShortFlat_1.default, null, children),
+            React.createElement(ShortHairShortRound_1.default, null, children),
+            React.createElement(ShortHairShortWaved_1.default, null, children),
+            React.createElement(ShortHairSides_1.default, null, children),
+            React.createElement(ShortHairTheCaesar_1.default, null, children),
+            React.createElement(ShortHairTheCaesarSidePart_1.default, null, children)));
     };
     return Top;
 }(React.Component));
-export default Top;
+exports.default = Top;

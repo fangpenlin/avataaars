@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,18 +9,19 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
-import FacialHair from './facialHair';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
+var facialHair_1 = require("./facialHair");
 var Hat = /** @class */ (function (_super) {
     __extends(Hat, _super);
     function Hat() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = uniqueId('react-filter-');
-        _this.mask1 = uniqueId('react-mask-');
-        _this.mask2 = uniqueId('react-mask-');
-        _this.path1 = uniqueId('react-path-');
-        _this.path2 = uniqueId('react-path-');
+        _this.filter1 = lodash_1.uniqueId('react-filter-');
+        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.mask2 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.path2 = lodash_1.uniqueId('react-path-');
         return _this;
     }
     Hat.prototype.render = function () {
@@ -46,10 +48,10 @@ var Hat = /** @class */ (function (_super) {
                         React.createElement("path", { d: 'M123.182388,2 L141.817612,2 L141.817612,2 C160.609055,2 176.866947,15.0804442 180.890118,33.4361631 L190,75 L75,75 L84.1098821,33.4361631 L84.1098821,33.4361631 C88.1330533,15.0804442 104.390945,2 123.182388,2 Z', fill: '#1F333C', mask: "url(#" + mask2 + ")" }),
                         React.createElement("ellipse", { id: 'Hipster', fill: '#1F333C', mask: "url(#" + mask2 + ")", cx: '132', cy: '87.5', rx: '122', ry: '57.5' }),
                         React.createElement("ellipse", { id: 'Very', fill: '#15232A', mask: "url(#" + mask2 + ")", cx: '132', cy: '82', rx: '62', ry: '25' })),
-                    React.createElement(FacialHair, null),
+                    React.createElement(facialHair_1.default, null),
                     this.props.children))));
     };
     Hat.optionValue = 'Hat';
     return Hat;
 }(React.Component));
-export default Hat;
+exports.default = Hat;

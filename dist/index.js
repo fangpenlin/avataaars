@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,17 +9,23 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as PropTypes from 'prop-types';
-import * as React from 'react';
-import Avatar from './avatar';
-import { OptionContext, allOptions } from './options';
-export { default as Avatar, AvatarStyle } from './avatar';
-export { Option, OptionContext, allOptions } from './options';
+Object.defineProperty(exports, "__esModule", { value: true });
+var PropTypes = require("prop-types");
+var React = require("react");
+var avatar_1 = require("./avatar");
+var options_1 = require("./options");
+var avatar_2 = require("./avatar");
+exports.Avatar = avatar_2.default;
+exports.AvatarStyle = avatar_2.AvatarStyle;
+var options_2 = require("./options");
+exports.Option = options_2.Option;
+exports.OptionContext = options_2.OptionContext;
+exports.allOptions = options_2.allOptions;
 var AvatarComponent = /** @class */ (function (_super) {
     __extends(AvatarComponent, _super);
     function AvatarComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.optionContext = new OptionContext(allOptions);
+        _this.optionContext = new options_1.OptionContext(options_1.allOptions);
         return _this;
     }
     AvatarComponent.prototype.getChildContext = function () {
@@ -32,11 +39,11 @@ var AvatarComponent = /** @class */ (function (_super) {
     };
     AvatarComponent.prototype.render = function () {
         var _a = this.props, avatarStyle = _a.avatarStyle, style = _a.style;
-        return React.createElement(Avatar, { avatarStyle: avatarStyle, style: style });
+        return React.createElement(avatar_1.default, { avatarStyle: avatarStyle, style: style });
     };
     AvatarComponent.prototype.updateOptionContext = function (props) {
         var data = {};
-        for (var _i = 0, allOptions_1 = allOptions; _i < allOptions_1.length; _i++) {
+        for (var _i = 0, allOptions_1 = options_1.allOptions; _i < allOptions_1.length; _i++) {
             var option = allOptions_1[_i];
             var value = props[option.key];
             if (!value) {
@@ -47,8 +54,8 @@ var AvatarComponent = /** @class */ (function (_super) {
         this.optionContext.setData(data);
     };
     AvatarComponent.childContextTypes = {
-        optionContext: PropTypes.instanceOf(OptionContext)
+        optionContext: PropTypes.instanceOf(options_1.OptionContext)
     };
     return AvatarComponent;
 }(React.Component));
-export default AvatarComponent;
+exports.default = AvatarComponent;

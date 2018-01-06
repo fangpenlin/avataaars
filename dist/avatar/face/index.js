@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,11 +9,12 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import Eyebrow from './eyebrow';
-import Eyes from './eyes';
-import Mouth from './mouth';
-import Nose from './nose/Default';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var eyebrow_1 = require("./eyebrow");
+var eyes_1 = require("./eyes");
+var mouth_1 = require("./mouth");
+var Default_1 = require("./nose/Default");
 var Face = /** @class */ (function (_super) {
     __extends(Face, _super);
     function Face() {
@@ -20,11 +22,11 @@ var Face = /** @class */ (function (_super) {
     }
     Face.prototype.render = function () {
         return (React.createElement("g", { id: 'Face', transform: 'translate(76.000000, 82.000000)', fill: '#000000' },
-            React.createElement(Mouth, null),
-            React.createElement(Nose, null),
-            React.createElement(Eyes, null),
-            React.createElement(Eyebrow, null)));
+            React.createElement(mouth_1.default, null),
+            React.createElement(Default_1.default, null),
+            React.createElement(eyes_1.default, null),
+            React.createElement(eyebrow_1.default, null)));
     };
     return Face;
 }(React.Component));
-export default Face;
+exports.default = Face;

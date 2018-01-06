@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,9 +9,10 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as PropTypes from 'prop-types';
-import * as React from 'react';
-import OptionContext from './OptionContext';
+Object.defineProperty(exports, "__esModule", { value: true });
+var PropTypes = require("prop-types");
+var React = require("react");
+var OptionContext_1 = require("./OptionContext");
 function getComponentOptionValue(component) {
     var optionValue = component.optionValue;
     if (!optionValue) {
@@ -78,8 +80,8 @@ var Selector = /** @class */ (function (_super) {
         this.optionContext.setOptions(option.key, values);
     };
     Selector.contextTypes = {
-        optionContext: PropTypes.instanceOf(OptionContext)
+        optionContext: PropTypes.instanceOf(OptionContext_1.default)
     };
     return Selector;
 }(React.Component));
-export default Selector;
+exports.default = Selector;

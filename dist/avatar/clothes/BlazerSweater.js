@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,14 +9,15 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
 var BlazerSweater = /** @class */ (function (_super) {
     __extends(BlazerSweater, _super);
     function BlazerSweater() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = uniqueId('react-path-');
-        _this.mask1 = uniqueId('react-mask-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.mask1 = lodash_1.uniqueId('react-mask-');
         return _this;
     }
     BlazerSweater.prototype.render = function () {
@@ -38,4 +40,4 @@ var BlazerSweater = /** @class */ (function (_super) {
     BlazerSweater.optionValue = 'BlazerSweater';
     return BlazerSweater;
 }(React.Component));
-export default BlazerSweater;
+exports.default = BlazerSweater;

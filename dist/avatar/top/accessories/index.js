@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,30 +9,31 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import Blank from './Blank';
-import Kurt from './Kurt';
-import Prescription01 from './Prescription01';
-import Prescription02 from './Prescription02';
-import Round from './Round';
-import Sunglasses from './Sunglasses';
-import Wayfarers from './Wayfarers';
-import { AccessoriesOption, Selector } from '../../../options';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var Blank_1 = require("./Blank");
+var Kurt_1 = require("./Kurt");
+var Prescription01_1 = require("./Prescription01");
+var Prescription02_1 = require("./Prescription02");
+var Round_1 = require("./Round");
+var Sunglasses_1 = require("./Sunglasses");
+var Wayfarers_1 = require("./Wayfarers");
+var options_1 = require("../../../options");
 var Accessories = /** @class */ (function (_super) {
     __extends(Accessories, _super);
     function Accessories() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Accessories.prototype.render = function () {
-        return (React.createElement(Selector, { defaultOption: Blank, option: AccessoriesOption },
-            React.createElement(Blank, null),
-            React.createElement(Kurt, null),
-            React.createElement(Prescription01, null),
-            React.createElement(Prescription02, null),
-            React.createElement(Round, null),
-            React.createElement(Sunglasses, null),
-            React.createElement(Wayfarers, null)));
+        return (React.createElement(options_1.Selector, { defaultOption: Blank_1.default, option: options_1.AccessoriesOption },
+            React.createElement(Blank_1.default, null),
+            React.createElement(Kurt_1.default, null),
+            React.createElement(Prescription01_1.default, null),
+            React.createElement(Prescription02_1.default, null),
+            React.createElement(Round_1.default, null),
+            React.createElement(Sunglasses_1.default, null),
+            React.createElement(Wayfarers_1.default, null)));
     };
     return Accessories;
 }(React.Component));
-export default Accessories;
+exports.default = Accessories;

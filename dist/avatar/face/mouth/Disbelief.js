@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,7 +9,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
 var Disbelief = /** @class */ (function (_super) {
     __extends(Disbelief, _super);
     function Disbelief() {
@@ -21,4 +23,4 @@ var Disbelief = /** @class */ (function (_super) {
     Disbelief.optionValue = 'Disbelief';
     return Disbelief;
 }(React.Component));
-export default Disbelief;
+exports.default = Disbelief;

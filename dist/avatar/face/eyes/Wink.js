@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,7 +9,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
 var Wink = /** @class */ (function (_super) {
     __extends(Wink, _super);
     function Wink() {
@@ -22,4 +24,4 @@ var Wink = /** @class */ (function (_super) {
     Wink.optionValue = 'Wink';
     return Wink;
 }(React.Component));
-export default Wink;
+exports.default = Wink;

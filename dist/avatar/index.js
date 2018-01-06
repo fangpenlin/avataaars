@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,17 +9,18 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import Accesories from './top/accessories';
-import Clothe from './clothes';
-import Face from './face';
-import Skin from './Skin';
-import Top from './top';
-export var AvatarStyle;
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var accessories_1 = require("./top/accessories");
+var clothes_1 = require("./clothes");
+var face_1 = require("./face");
+var Skin_1 = require("./Skin");
+var top_1 = require("./top");
+var AvatarStyle;
 (function (AvatarStyle) {
     AvatarStyle["Circle"] = "Circle";
     AvatarStyle["Transparent"] = "Transparent";
-})(AvatarStyle || (AvatarStyle = {}));
+})(AvatarStyle = exports.AvatarStyle || (exports.AvatarStyle = {}));
 var Avatar = /** @class */ (function (_super) {
     __extends(Avatar, _super);
     function Avatar() {
@@ -50,13 +52,13 @@ var Avatar = /** @class */ (function (_super) {
                                 React.createElement("mask", { id: 'mask-6', fill: 'white' },
                                     React.createElement("use", { xlinkHref: '#path-5' })),
                                 React.createElement("use", { fill: '#D0C6AC', xlinkHref: '#path-5' }),
-                                React.createElement(Skin, { maskID: 'mask-6' }),
+                                React.createElement(Skin_1.default, { maskID: 'mask-6' }),
                                 React.createElement("path", { d: 'M156,79 L156,102 C156,132.927946 130.927946,158 100,158 C69.072054,158 44,132.927946 44,102 L44,79 L44,94 C44,124.927946 69.072054,150 100,150 C130.927946,150 156,124.927946 156,94 L156,79 Z', id: 'Neck-Shadow', fillOpacity: '0.100000001', fill: '#000000', mask: 'url(#mask-6)' })),
-                            React.createElement(Clothe, null),
-                            React.createElement(Face, null),
-                            React.createElement(Top, null,
-                                React.createElement(Accesories, null))))))));
+                            React.createElement(clothes_1.default, null),
+                            React.createElement(face_1.default, null),
+                            React.createElement(top_1.default, null,
+                                React.createElement(accessories_1.default, null))))))));
     };
     return Avatar;
 }(React.Component));
-export default Avatar;
+exports.default = Avatar;

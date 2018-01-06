@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,16 +9,17 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
-import Colors from './Colors';
-import Graphics from './Graphics';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
+var Colors_1 = require("./Colors");
+var Graphics_1 = require("./Graphics");
 var GraphicShirt = /** @class */ (function (_super) {
     __extends(GraphicShirt, _super);
     function GraphicShirt() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = uniqueId('react-path-');
-        _this.mask1 = uniqueId('react-mask-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.mask1 = lodash_1.uniqueId('react-mask-');
         return _this;
     }
     GraphicShirt.prototype.render = function () {
@@ -28,10 +30,10 @@ var GraphicShirt = /** @class */ (function (_super) {
             React.createElement("mask", { id: mask1, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path1 })),
             React.createElement("use", { id: 'Clothes', fill: '#E6E6E6', fillRule: 'evenodd', xlinkHref: '#' + path1 }),
-            React.createElement(Colors, { maskID: mask1 }),
-            React.createElement(Graphics, { maskID: mask1 })));
+            React.createElement(Colors_1.default, { maskID: mask1 }),
+            React.createElement(Graphics_1.default, { maskID: mask1 })));
     };
     GraphicShirt.optionValue = 'GraphicShirt';
     return GraphicShirt;
 }(React.Component));
-export default GraphicShirt;
+exports.default = GraphicShirt;

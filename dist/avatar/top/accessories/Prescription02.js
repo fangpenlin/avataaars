@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,13 +9,14 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import * as React from 'react';
-import { uniqueId } from 'lodash';
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var lodash_1 = require("lodash");
 var Prescription02 = /** @class */ (function (_super) {
     __extends(Prescription02, _super);
     function Prescription02() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = uniqueId('react-filter-');
+        _this.filter1 = lodash_1.uniqueId('react-filter-');
         return _this;
     }
     Prescription02.prototype.render = function () {
@@ -35,4 +37,4 @@ var Prescription02 = /** @class */ (function (_super) {
     Prescription02.optionValue = 'Prescription02';
     return Prescription02;
 }(React.Component));
-export default Prescription02;
+exports.default = Prescription02;

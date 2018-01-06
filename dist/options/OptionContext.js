@@ -1,3 +1,4 @@
+"use strict";
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -6,6 +7,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     }
     return t;
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var OptionContext = /** @class */ (function () {
     function OptionContext(options) {
         this.stateChangeListeners = new Set();
@@ -114,4 +116,4 @@ var OptionContext = /** @class */ (function () {
     };
     return OptionContext;
 }());
-export default OptionContext;
+exports.default = OptionContext;
