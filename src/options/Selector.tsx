@@ -14,7 +14,7 @@ function getComponentOptionValue (component: React.ComponentClass) {
 
 export interface Props {
   option: Option
-  defaultOption: React.ComponentClass
+  defaultOption: React.ComponentClass | string
 }
 
 export default class Selector extends React.Component<Props> {
@@ -29,7 +29,10 @@ export default class Selector extends React.Component<Props> {
   componentWillMount () {
     const { option, defaultOption } = this.props
     const { optionContext } = this
-    const defaultValue = getComponentOptionValue(defaultOption)
+    const defaultValue = (
+      typeof defaultOption === 'string' ?
+      defaultOption : getComponentOptionValue(defaultOption)
+    )
     optionContext.addStateChangeListener(this.optionContextUpdate)
     optionContext.optionEnter(option.key)
     const optionState = optionContext.getOptionState(option.key)

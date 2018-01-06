@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { uniqueId } from 'lodash'
 
+import HatColor from './HatColor'
+
 export default class Hijab extends React.Component {
   static optionValue = 'Hijab'
 
@@ -61,19 +63,7 @@ export default class Hijab extends React.Component {
               fillRule='evenodd'
               xlinkHref={'#' + path2}
             />
-            <g
-              id='Color/Palette/Blue-03'
-              stroke='none'
-              fill='none'
-              mask={`url(#${mask2})`}
-              fillRule='evenodd'>
-              <g
-                transform='translate(1.000000, 0.000000)'
-                id='🖍Color'
-                fill='#25557C'>
-                <rect x='0' y='0' width='264' height='280' />
-              </g>
-            </g>
+            <HatColor maskID={mask2} defaultColor='Blue03' />
             <path
               d='M72.0744416,104.959767 C71.3690172,101.246903 71,97.4161983 71,93.5 C71,59.5344879 98.7583455,32 133,32 C167.241654,32 195,59.5344879 195,93.5 C195,97.4161983 194.630983,101.246903 193.925558,104.959767 C192.341315,72.6827942 165.669927,47 133,47 C100.330073,47 73.6586845,72.6827942 72.0744428,104.959774 Z'
               id='Band'

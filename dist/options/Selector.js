@@ -39,7 +39,8 @@ var Selector = /** @class */ (function (_super) {
     Selector.prototype.componentWillMount = function () {
         var _a = this.props, option = _a.option, defaultOption = _a.defaultOption;
         var optionContext = this.optionContext;
-        var defaultValue = getComponentOptionValue(defaultOption);
+        var defaultValue = (typeof defaultOption === 'string' ?
+            defaultOption : getComponentOptionValue(defaultOption));
         optionContext.addStateChangeListener(this.optionContextUpdate);
         optionContext.optionEnter(option.key);
         var optionState = optionContext.getOptionState(option.key);
