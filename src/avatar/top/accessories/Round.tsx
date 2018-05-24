@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { uniqueId } from 'lodash'
+import * as uniqueId from 'lodash.uniqueid'
 
 export default class Round extends React.Component {
   static optionValue = 'Round'
