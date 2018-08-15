@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import Accesories from './top/accessories'
+import Accessories from './top/accessories'
 import Clothe from './clothes'
 import Face from './face'
 import Skin from './Skin'
@@ -101,7 +101,7 @@ export default class Avatar extends React.Component<Props> {
                 <Clothe />
                 <Face />
                 <Top>
-                  <Accesories />
+                  <Accessories />
                 </Top>
               </g>
             </g>

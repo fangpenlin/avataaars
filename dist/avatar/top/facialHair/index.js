@@ -1,8 +1,11 @@
 "use strict";
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -12,7 +15,7 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var BeardLight_1 = require("./BeardLight");
-var BeardMagestic_1 = require("./BeardMagestic");
+var BeardMajestic_1 = require("./BeardMajestic");
 var BeardMedium_1 = require("./BeardMedium");
 var Blank_1 = require("./Blank");
 var MoustacheFancy_1 = require("./MoustacheFancy");
@@ -28,7 +31,7 @@ var FacialHair = /** @class */ (function (_super) {
             React.createElement(Blank_1.default, null),
             React.createElement(BeardMedium_1.default, null),
             React.createElement(BeardLight_1.default, null),
-            React.createElement(BeardMagestic_1.default, null),
+            React.createElement(BeardMajestic_1.default, null),
             React.createElement(MoustacheFancy_1.default, null),
             React.createElement(MoustacheMagnum_1.default, null)));
     };

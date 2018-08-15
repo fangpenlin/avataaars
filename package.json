@@ -4,7 +4,10 @@
   "description": "React component for avataaars ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "keywords": ["react", "avatar"],
+  "keywords": [
+    "react",
+    "avatar"
+  ],
   "repository": "git@github.com:fangpenlin/avataaars.git",
   "author": "Fang-Pen Lin <hello@fangpenlin.com>",
   "license": "MIT",

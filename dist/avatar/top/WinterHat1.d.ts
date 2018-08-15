@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import * as React from 'react';
 export default class WinterHat1 extends React.Component {
     static optionValue: string;
