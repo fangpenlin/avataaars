@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import Clothe from './clothes'
 import Graphics from './clothes/Graphics'
-import Accesories from './top/accessories'
+import Accessories from './top/accessories'
 import FacialHair from './top/facialHair'
 import Top from './top'
 
@@ -37,7 +37,7 @@ export default class PieceComponent extends React.Component<Props> {
           {this.props.pieceType === 'top' && <Top/>}
           {this.props.pieceType === 'clothe' && <Clothe/>}
           {this.props.pieceType === 'graphics' && <Graphics maskID="1234"/>}
-          {this.props.pieceType === 'accesories' && <Accesories/>}
+          {this.props.pieceType === 'accessories' && <Accessories/>}
           {this.props.pieceType === 'facialHair' && <FacialHair/>}
           {this.props.pieceType === 'eyes' && <Eyes/>}
           {this.props.pieceType === 'eyebrows' && <Eyebrows/>}
