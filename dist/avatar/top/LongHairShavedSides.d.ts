@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import * as React from 'react';
 export default class LongHairShavedSides extends React.Component {
     static optionValue: string;

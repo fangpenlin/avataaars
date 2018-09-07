@@ -57,6 +57,29 @@ export default class MyComponent extends React.Component {
 }
 ```
 
+To showcase individual pieces of the avatar you can use the Piece component, for example:
+
+```jsx
+import * as React from 'react'
+import {Piece} from 'avataaars';
+
+export default class MyComponent extends React.Component {
+  render () {
+    return 
+      <div>
+        <Piece pieceType="mouth" pieceSize="100" mouthType="Eating"/>
+        <Piece pieceType="eyes" pieceSize="100" eyeType="Dizzy"/>
+        <Piece pieceType="eyebrows" pieceSize="100" eyebrowType="RaisedExcited"/>
+        <Piece pieceType="accessories" pieceSize="100" accessoriesType="Round"/>
+        <Piece pieceType="top" pieceSize="100" topType="LongHairFro" hairColor="Red"/>
+        <Piece pieceType="facialHair" pieceSize="100" facialHairType="BeardMajestic"/>
+        <Piece pieceType="clothe" pieceSize="100" clotheType="Hoodie" clotheColor="Red"/>
+        <Piece pieceType="graphics" pieceSize="100" graphicType="Skull" />
+      </div>
+  }
+}
+```
+
 To explore avatar options and generate the React code, please use [Avataaars Generator](https://getavataaars.com/)
 
 ## Collect options

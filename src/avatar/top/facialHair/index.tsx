@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import BeardLight from './BeardLight'
-import BeardMagestic from './BeardMagestic'
+import BeardMajestic from './BeardMajestic'
 import BeardMedium from './BeardMedium'
 import Blank from './Blank'
 import MoustacheFancy from './MoustacheFancy'
@@ -15,7 +15,7 @@ export default class FacialHair extends React.Component {
         <Blank />
         <BeardMedium />
         <BeardLight />
-        <BeardMagestic />
+        <BeardMajestic />
         <MoustacheFancy />
         <MoustacheMagnum />
       </Selector>

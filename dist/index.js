@@ -1,8 +1,11 @@
 "use strict";
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -21,6 +24,7 @@ var options_2 = require("./options");
 exports.Option = options_2.Option;
 exports.OptionContext = options_2.OptionContext;
 exports.allOptions = options_2.allOptions;
+var piece_1 = require("./avatar/piece");
 var AvatarComponent = /** @class */ (function (_super) {
     __extends(AvatarComponent, _super);
     function AvatarComponent() {
@@ -59,3 +63,41 @@ var AvatarComponent = /** @class */ (function (_super) {
     return AvatarComponent;
 }(React.Component));
 exports.default = AvatarComponent;
+var Piece = /** @class */ (function (_super) {
+    __extends(Piece, _super);
+    function Piece() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.optionContext = new options_1.OptionContext(options_1.allOptions);
+        return _this;
+    }
+    Piece.prototype.getChildContext = function () {
+        return { optionContext: this.optionContext };
+    };
+    Piece.prototype.componentWillMount = function () {
+        this.updateOptionContext(this.props);
+    };
+    Piece.prototype.componentWillReceiveProps = function (nextProps) {
+        this.updateOptionContext(nextProps);
+    };
+    Piece.prototype.render = function () {
+        var _a = this.props, avatarStyle = _a.avatarStyle, style = _a.style, pieceType = _a.pieceType, pieceSize = _a.pieceSize;
+        return React.createElement(piece_1.default, { avatarStyle: avatarStyle, style: style, pieceType: pieceType, pieceSize: pieceSize });
+    };
+    Piece.prototype.updateOptionContext = function (props) {
+        var data = {};
+        for (var _i = 0, allOptions_2 = options_1.allOptions; _i < allOptions_2.length; _i++) {
+            var option = allOptions_2[_i];
+            var value = props[option.key];
+            if (!value) {
+                continue;
+            }
+            data[option.key] = value;
+        }
+        this.optionContext.setData(data);
+    };
+    Piece.childContextTypes = {
+        optionContext: PropTypes.instanceOf(options_1.OptionContext)
+    };
+    return Piece;
+}(React.Component));
+exports.Piece = Piece;
