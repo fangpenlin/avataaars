@@ -75,6 +75,7 @@ export default class MyComponent extends React.Component {
         <Piece pieceType="facialHair" pieceSize="100" facialHairType="BeardMajestic"/>
         <Piece pieceType="clothe" pieceSize="100" clotheType="Hoodie" clotheColor="Red"/>
         <Piece pieceType="graphics" pieceSize="100" graphicType="Skull" />
+        <Piece pieceType="skin" pieceSize="100" skinColor="Brown" />
       </div>
   }
 }
