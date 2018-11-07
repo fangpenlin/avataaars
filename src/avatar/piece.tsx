@@ -38,8 +38,8 @@ export default class PieceComponent extends React.Component<Props> {
         {this.props.pieceType === 'top' && <Top />}
         {this.props.pieceType === 'clothe' && <Clothe />}
         {this.props.pieceType === 'graphics' && <Graphics maskID="1234" />}
-        {this.props.pieceType === 'accessories' ||
-          (this.props.pieceType === 'accesories' && <Accessories />)}
+        {(this.props.pieceType === 'accessories' ||
+          this.props.pieceType === 'accesories') && <Accessories />}
         {this.props.pieceType === 'facialHair' && <FacialHair />}
         {this.props.pieceType === 'eyes' && <Eyes />}
         {this.props.pieceType === 'eyebrows' && <Eyebrows />}

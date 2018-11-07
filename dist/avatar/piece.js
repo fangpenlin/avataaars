@@ -39,8 +39,8 @@ var PieceComponent = /** @class */ (function (_super) {
             this.props.pieceType === 'top' && React.createElement(top_1.default, null),
             this.props.pieceType === 'clothe' && React.createElement(clothes_1.default, null),
             this.props.pieceType === 'graphics' && React.createElement(Graphics_1.default, { maskID: "1234" }),
-            this.props.pieceType === 'accessories' ||
-                (this.props.pieceType === 'accesories' && React.createElement(accessories_1.default, null)),
+            (this.props.pieceType === 'accessories' ||
+                this.props.pieceType === 'accesories') && React.createElement(accessories_1.default, null),
             this.props.pieceType === 'facialHair' && React.createElement(facialHair_1.default, null),
             this.props.pieceType === 'eyes' && React.createElement(eyes_1.default, null),
             this.props.pieceType === 'eyebrows' && React.createElement(eyebrow_1.default, null),
