@@ -41,6 +41,7 @@ export default class MyComponent extends React.Component {
         <Avatar
           style={{width: '100px', height: '100px'}}
           avatarStyle='Circle'
+          avatarBackground='#65C9FF'
           topType='LongHairMiaWallace'
           accessoriesType='Prescription02'
           hairColor='BrownDark'

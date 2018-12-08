@@ -14,11 +14,12 @@ export enum AvatarStyle {
 export interface Props {
   avatarStyle: AvatarStyle
   style?: React.CSSProperties
+  avatarBackground?: string
 }
 
 export default class Avatar extends React.Component<Props> {
   render () {
-    const { avatarStyle } = this.props
+    const { avatarStyle, avatarBackground } = this.props
     const circle = avatarStyle === AvatarStyle.Circle
     return (
       <svg
@@ -68,7 +69,7 @@ export default class Avatar extends React.Component<Props> {
                   <g
                     id='Color/Palette/Blue-01'
                     mask='url(#mask-2)'
-                    fill='#65C9FF'>
+                    fill={avatarBackground ? avatarBackground : '#65C9FF'}>
                     <rect id='🖍Color' x='0' y='0' width='240' height='240' />
                   </g>
                 </g>
