@@ -14,6 +14,7 @@ export interface Props {
   style?: React.CSSProperties
   topType?: string
   accessoriesType?: string
+  hatColor?: string
   hairColor?: string
   facialHairType?: string
   facialHairColor?: string
