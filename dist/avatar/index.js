@@ -1,11 +1,8 @@
 "use strict";
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    }
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -46,7 +43,7 @@ var Avatar = /** @class */ (function (_super) {
                                 React.createElement("use", { xlinkHref: '#path-1' })),
                             React.createElement("use", { id: 'Circle-Background', fill: '#E6E6E6', xlinkHref: '#path-1' }),
                             React.createElement("g", { id: 'Color/Palette/Blue-01', mask: 'url(#mask-2)', fill: '#65C9FF' },
-                                React.createElement("rect", { id: '\uD83D\uDD8DColor', x: '0', y: '0', width: '240', height: '240' })))) : null,
+                                React.createElement("rect", { id: '🖍Color', x: '0', y: '0', width: '240', height: '240' })))) : null,
                         circle ? (React.createElement("mask", { id: 'mask-4', fill: 'white' },
                             React.createElement("use", { xlinkHref: '#path-3' }))) : null,
                         React.createElement("g", { id: 'Mask' }),

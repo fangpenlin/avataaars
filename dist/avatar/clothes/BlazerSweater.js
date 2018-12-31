@@ -1,11 +1,8 @@
 "use strict";
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    }
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -32,7 +29,7 @@ var BlazerSweater = /** @class */ (function (_super) {
                 React.createElement("use", { xlinkHref: '#' + path1 })),
             React.createElement("use", { id: 'Clothes', fill: '#E6E6E6', fillRule: 'evenodd', xlinkHref: '#' + path1 }),
             React.createElement("g", { id: 'Color/Palette/Black', mask: "url(#" + mask1 + ")", fillRule: 'evenodd', fill: '#262E33' },
-                React.createElement("rect", { id: '\uD83D\uDD8DColor', x: '0', y: '0', width: '264', height: '110' })),
+                React.createElement("rect", { id: '🖍Color', x: '0', y: '0', width: '264', height: '110' })),
             React.createElement("g", { id: 'Blazer', strokeWidth: '1', fillRule: 'evenodd', transform: 'translate(32.000000, 28.000000)' },
                 React.createElement("path", { d: 'M68.784807,1.12222847 C30.512317,2.80409739 1.24427139e-14,34.3646437 0,73.0517235 L0,82 L69.3616767,82 C65.9607412,69.9199941 64,55.7087296 64,40.5 C64,26.1729736 65.7399891,12.7311115 68.784807,1.12222847 Z M131.638323,82 L200,82 L200,73.0517235 C200,34.7067641 170.024954,3.36285166 132.228719,1.17384225 C135.265163,12.7709464 137,26.1942016 137,40.5 C137,55.7087296 135.039259,69.9199941 131.638323,82 Z', id: 'Saco', fill: '#3A4C5A' }),
                 React.createElement("path", { d: 'M149,58 L158.555853,50.83311 L158.555853,50.83311 C159.998897,49.7508275 161.987779,49.7682725 163.411616,50.8757011 L170,56 L149,58 Z', id: 'Pocket-hanky', fill: '#E6E6E6' }),

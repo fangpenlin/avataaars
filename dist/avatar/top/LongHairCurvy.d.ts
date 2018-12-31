@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 export default class LongHairCurvy extends React.Component {
     static optionValue: string;
