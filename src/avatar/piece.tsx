@@ -22,6 +22,7 @@ export interface Props {
   pieceType?: string
   avatarStyle: AvatarStyle
   style?: React.CSSProperties
+  viewBox?: string
 }
 
 export default class PieceComponent extends React.Component<Props> {
@@ -31,7 +32,7 @@ export default class PieceComponent extends React.Component<Props> {
         style={this.props.style}
         width={`${this.props.pieceSize}px`}
         height={`${this.props.pieceSize}px`}
-        viewBox="0 0 264 280"
+        viewBox={this.props.viewBox || "0 0 264 280"}
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink">
