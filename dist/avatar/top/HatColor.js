@@ -1,11 +1,8 @@
 "use strict";
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    }
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -23,7 +20,7 @@ function makeColor(name, color) {
         }
         ColorComponent.prototype.render = function () {
             return (React.createElement("g", { id: 'Color/Palette/Gray-01', mask: "url(#" + this.props.maskID + ")", fillRule: 'evenodd', fill: color },
-                React.createElement("rect", { id: '\uD83D\uDD8DColor', x: '0', y: '0', width: '264', height: '280' })));
+                React.createElement("rect", { id: '🖍Color', x: '0', y: '0', width: '264', height: '280' })));
         };
         return ColorComponent;
     }(React.Component));

@@ -31,6 +31,6 @@ export default class OptionContext {
     }): void;
     setDefaultValue(key: string, defaultValue: string): void;
     setOptions(key: string, options: Array<string>): void;
-    private setState;
-    private notifyListener;
+    private setState(state);
+    private notifyListener();
 }
