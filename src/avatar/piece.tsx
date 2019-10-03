@@ -12,15 +12,9 @@ import Mouth from './face/mouth'
 import Nose from './face/nose'
 import Skin from './Skin'
 
-export enum AvatarStyle {
-  Circle = 'Circle',
-  Transparent = 'Transparent',
-}
-
 export interface Props {
   pieceSize?: string
   pieceType?: string
-  avatarStyle: AvatarStyle
   style?: React.CSSProperties
   viewBox?: string
 }

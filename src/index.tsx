@@ -1,7 +1,7 @@
 import * as PropTypes from 'prop-types'
 import * as React from 'react'
 
-import Avatar, { AvatarStyle } from './avatar'
+import Avatar from './avatar'
 import { OptionContext, allOptions } from './options'
 
 export { default as Avatar, AvatarStyle } from './avatar'
@@ -10,7 +10,6 @@ export { Option, OptionContext, allOptions } from './options'
 import {default as PieceComponent} from './avatar/piece';
 
 export interface Props {
-  avatarStyle: string
   style?: React.CSSProperties
   topType?: string
   accessoriesType?: string
@@ -48,8 +47,8 @@ export default class AvatarComponent extends React.Component<Props> {
   }
 
   render () {
-    const { avatarStyle, style } = this.props
-    return <Avatar avatarStyle={avatarStyle as AvatarStyle} style={style} />
+    const { style } = this.props
+    return <Avatar  style={style} />
   }
 
   private updateOptionContext (props: Props) {
@@ -84,8 +83,8 @@ export class Piece extends React.Component<Props> {
   }
 
   render () {
-    const { avatarStyle, style, pieceType, pieceSize, viewBox } = this.props
-    return <PieceComponent avatarStyle={avatarStyle as AvatarStyle} style={style} pieceType={pieceType} pieceSize={pieceSize} viewBox={viewBox}/>
+    const { style, pieceType, pieceSize, viewBox } = this.props
+    return <PieceComponent style={style} pieceType={pieceType} pieceSize={pieceSize} viewBox={viewBox}/>
   }
 
   private updateOptionContext (props: Props) {
