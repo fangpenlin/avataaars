@@ -15,7 +15,7 @@ import WinkWacky from './WinkWacky'
 import { EyesOption, Selector } from '../../../options'
 
 export default class Eyes extends React.Component {
-  render () {
+  render() {
     return (
       <Selector defaultOption={Default} option={EyesOption}>
         <Close />
