@@ -11,6 +11,10 @@
   "repository": "git@github.com:fangpenlin/avataaars.git",
   "author": "Fang-Pen Lin <hello@fangpenlin.com>",
   "license": "MIT",
+  "scripts": {
+    "format": "prettier --write src/**/*",
+    "build": "rm -rf dist && tsc"
+  },
   "peerDependencies": {
     "react": "^16.0.0"
   },
@@ -18,6 +22,7 @@
     "@types/react": "^16.0.25",
     "import-sort-style-renke": "^4.2.0",
     "tslint": "^5.8.0",
+    "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^7.0.0",
     "tslint-react": "^3.2.0",
     "typescript": "^2.6.2"

@@ -15,7 +15,7 @@ import Vomit from './Vomit'
 import { MouthOption, Selector } from '../../../options'
 
 export default class Mouth extends React.Component {
-  render () {
+  render() {
     return (
       <Selector defaultOption={Default} option={MouthOption}>
         <Concerned />

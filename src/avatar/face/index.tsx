@@ -6,9 +6,9 @@ import Mouth from './mouth'
 import Nose from './nose/Default'
 
 export default class Face extends React.Component {
-  render () {
+  render() {
     return (
-      <g id='Face' transform='translate(76.000000, 82.000000)' fill='#000000'>
+      <g id="Face" transform="translate(76.000000, 82.000000)" fill="#000000">
         <Mouth />
         <Nose />
         <Eyes />
