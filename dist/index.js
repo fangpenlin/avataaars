@@ -35,7 +35,7 @@ var AvatarComponent = /** @class */ (function (_super) {
     AvatarComponent.prototype.getChildContext = function () {
         return { optionContext: this.optionContext };
     };
-    AvatarComponent.prototype.componentWillMount = function () {
+    AvatarComponent.prototype.componentDidMount = function () {
         this.updateOptionContext(this.props);
     };
     AvatarComponent.prototype.componentWillReceiveProps = function (nextProps) {
@@ -73,7 +73,7 @@ var Piece = /** @class */ (function (_super) {
     Piece.prototype.getChildContext = function () {
         return { optionContext: this.optionContext };
     };
-    Piece.prototype.componentWillMount = function () {
+    Piece.prototype.componentDidMount = function () {
         this.updateOptionContext(this.props);
     };
     Piece.prototype.componentWillReceiveProps = function (nextProps) {
