@@ -8,6 +8,7 @@ export interface Props {
     pieceType?: string;
     avatarStyle: AvatarStyle;
     style?: React.CSSProperties;
+    viewBox?: string;
 }
 export default class PieceComponent extends React.Component<Props> {
     render(): JSX.Element;

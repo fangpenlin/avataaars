@@ -20,6 +20,7 @@ export interface Props {
     skinColor?: string;
     pieceType?: string;
     pieceSize?: string;
+    viewBox?: string;
 }
 export default class AvatarComponent extends React.Component<Props> {
     static childContextTypes: {
