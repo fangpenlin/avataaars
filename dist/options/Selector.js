@@ -5,7 +5,7 @@ var __extends = (this && this.__extends) || (function () {
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
             function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
         return extendStatics(d, b);
-    }
+    };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -77,7 +77,7 @@ var Selector = /** @class */ (function (_super) {
         var _a = this.props, option = _a.option, children = _a.children;
         var values = React.Children.map(children, 
         // TODO: also validate and throw error if we don't see optionValue
-        function (child) { return getComponentOptionValue(child.type); });
+        function (child) { return getComponentOptionValue(child.type); }) || [];
         if (new Set(values).size !== values.length) {
             throw new Error('Duplicate values');
         }
