@@ -27,6 +27,7 @@ var Skin_1 = require("./Skin");
 var AvatarStyle;
 (function (AvatarStyle) {
     AvatarStyle["Circle"] = "Circle";
+    AvatarStyle["Tutor"] = "Tutor";
     AvatarStyle["Transparent"] = "Transparent";
 })(AvatarStyle = exports.AvatarStyle || (exports.AvatarStyle = {}));
 var PieceComponent = /** @class */ (function (_super) {

@@ -1,6 +1,7 @@
 import * as React from 'react';
 export declare enum AvatarStyle {
     Circle = "Circle",
+    Tutor = "Tutor",
     Transparent = "Transparent"
 }
 export interface Props {

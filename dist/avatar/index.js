@@ -22,6 +22,7 @@ var top_1 = require("./top");
 var AvatarStyle;
 (function (AvatarStyle) {
     AvatarStyle["Circle"] = "Circle";
+    AvatarStyle["Tutor"] = "Tutor";
     AvatarStyle["Transparent"] = "Transparent";
 })(AvatarStyle = exports.AvatarStyle || (exports.AvatarStyle = {}));
 var Avatar = /** @class */ (function (_super) {
@@ -31,7 +32,7 @@ var Avatar = /** @class */ (function (_super) {
     }
     Avatar.prototype.render = function () {
         var avatarStyle = this.props.avatarStyle;
-        var circle = avatarStyle === AvatarStyle.Circle;
+        var circle = avatarStyle === AvatarStyle.Circle || avatarStyle === AvatarStyle.Tutor;
         return (React.createElement("svg", { style: this.props.style, width: '264px', height: '280px', viewBox: '0 0 264 280', version: '1.1', xmlns: 'http://www.w3.org/2000/svg', xmlnsXlink: 'http://www.w3.org/1999/xlink' },
             React.createElement("desc", null, "Created with getavataaars.com"),
             React.createElement("defs", null,
@@ -45,7 +46,7 @@ var Avatar = /** @class */ (function (_super) {
                             React.createElement("mask", { id: 'mask-2', fill: 'white' },
                                 React.createElement("use", { xlinkHref: '#path-1' })),
                             React.createElement("use", { id: 'Circle-Background', fill: '#E6E6E6', xlinkHref: '#path-1' }),
-                            React.createElement("g", { id: 'Color/Palette/Blue-01', mask: 'url(#mask-2)', fill: '#65C9FF' },
+                            React.createElement("g", { id: 'Color/Palette/Blue-01', mask: 'url(#mask-2)', fill: avatarStyle === AvatarStyle.Tutor ? '#E0E253' : '#65C9FF' },
                                 React.createElement("rect", { id: '\uD83D\uDD8DColor', x: '0', y: '0', width: '240', height: '240' })))) : null,
                         circle ? (React.createElement("mask", { id: 'mask-4', fill: 'white' },
                             React.createElement("use", { xlinkHref: '#path-3' }))) : null,

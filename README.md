@@ -15,6 +15,27 @@ The core React component for [Avataaars Generator](https://getavataaars.com/) de
 
 ## Usage
 
+### Development
+To test locally in eureka clone this repo then in the terminal in eureka directory
+
+```
+cd vendor/eureka-assets
+npm link <relative path to avataaars repo> # NB: it must be RELATIVE path
+```
+
+To compile the typescript on save (you made need to install tsc via npm)
+
+```
+tsc -w
+```
+
+In order to see the changes in eureka, in Eureka root:
+
+```
+./bin/webpack
+```
+
+### Distribution
 First, you need to install the avataaars component package, here you run
 
 ```

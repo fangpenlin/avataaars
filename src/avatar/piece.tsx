@@ -14,7 +14,8 @@ import Skin from './Skin'
 
 export enum AvatarStyle {
   Circle = 'Circle',
-  Transparent = 'Transparent',
+  Tutor = 'Tutor',
+  Transparent = 'Transparent'
 }
 
 export interface Props {
