@@ -14,8 +14,8 @@ export default class OptionContext {
     private _state;
     private _data;
     private readonly _options;
-    readonly options: Option[];
-    readonly state: OptionContextState;
+    get options(): Option[];
+    get state(): OptionContextState;
     constructor(options: Array<Option>);
     addStateChangeListener(listener: () => void): void;
     removeStateChangeListener(listener: () => void): void;

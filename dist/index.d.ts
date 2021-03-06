@@ -1,4 +1,3 @@
-import * as PropTypes from 'prop-types';
 import * as React from 'react';
 import { OptionContext } from './options';
 export { default as Avatar, AvatarStyle } from './avatar';
@@ -20,10 +19,11 @@ export interface Props {
     skinColor?: string;
     pieceType?: string;
     pieceSize?: string;
+    viewBox?: string;
 }
 export default class AvatarComponent extends React.Component<Props> {
     static childContextTypes: {
-        optionContext: PropTypes.Requireable<OptionContext>;
+        optionContext: any;
     };
     private optionContext;
     getChildContext(): {
@@ -36,7 +36,7 @@ export default class AvatarComponent extends React.Component<Props> {
 }
 export declare class Piece extends React.Component<Props> {
     static childContextTypes: {
-        optionContext: PropTypes.Requireable<OptionContext>;
+        optionContext: any;
     };
     private optionContext;
     getChildContext(): {

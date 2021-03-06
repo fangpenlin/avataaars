@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.allOptions = exports.SkinOption = exports.MouthOption = exports.EyebrowOption = exports.EyesOption = exports.GraphicOption = exports.ClotheColorOption = exports.ClotheOption = exports.FacialHairColor = exports.FacialHairOption = exports.HairColorOption = exports.HatColorOption = exports.AccessoriesOption = exports.TopOption = exports.Selector = exports.OptionContext = exports.Option = void 0;
 var Option_1 = require("./Option");
 var Option_2 = require("./Option");
-exports.Option = Option_2.default;
+Object.defineProperty(exports, "Option", { enumerable: true, get: function () { return Option_2.default; } });
 var OptionContext_1 = require("./OptionContext");
-exports.OptionContext = OptionContext_1.default;
+Object.defineProperty(exports, "OptionContext", { enumerable: true, get: function () { return OptionContext_1.default; } });
 var Selector_1 = require("./Selector");
-exports.Selector = Selector_1.default;
+Object.defineProperty(exports, "Selector", { enumerable: true, get: function () { return Selector_1.default; } });
 exports.TopOption = new Option_1.default({
     key: 'topType',
     label: 'Top',
