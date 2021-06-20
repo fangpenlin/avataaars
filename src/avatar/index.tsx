@@ -14,6 +14,7 @@ export enum AvatarStyle {
 
 export interface Props {
   avatarStyle: AvatarStyle
+  className?: string;
   style?: React.CSSProperties
 }
 
@@ -32,6 +33,7 @@ export default class Avatar extends React.Component<Props> {
     return (
       <svg
         style={this.props.style}
+        className={this.props.className}
         width="264px"
         height="280px"
         viewBox="0 0 264 280"
