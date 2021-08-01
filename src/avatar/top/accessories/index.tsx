@@ -10,7 +10,7 @@ import Wayfarers from './Wayfarers'
 import { AccessoriesOption, Selector } from '../../../options'
 
 export default class Accessories extends React.Component {
-  render () {
+  render() {
     return (
       <Selector defaultOption={Blank} option={AccessoriesOption}>
         <Blank />

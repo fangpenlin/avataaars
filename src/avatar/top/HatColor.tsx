@@ -7,16 +7,16 @@ export interface Props {
   defaultColor?: string
 }
 
-function makeColor (name: string, color: string) {
+function makeColor(name: string, color: string) {
   class ColorComponent extends React.Component<Props> {
-    render () {
+    render() {
       return (
         <g
-          id='Color/Palette/Gray-01'
+          id="Color/Palette/Gray-01"
           mask={`url(#${this.props.maskID})`}
-          fillRule='evenodd'
+          fillRule="evenodd"
           fill={color}>
-          <rect id='🖍Color' x='0' y='0' width='264' height='280' />
+          <rect id="🖍Color" x="0" y="0" width="264" height="280" />
         </g>
       )
     }
