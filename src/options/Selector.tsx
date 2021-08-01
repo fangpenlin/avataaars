@@ -4,6 +4,11 @@ import * as React from 'react'
 import Option from './Option'
 import OptionContext from './OptionContext'
 
+const canUseDOM = !!(
+  (typeof window !== 'undefined' &&
+  window.document && window.document.createElement)
+);
+
 function getComponentOptionValue (component: React.ComponentClass) {
   const optionValue = (component as any).optionValue
   if (!optionValue) {
@@ -64,7 +69,7 @@ export default class Selector extends React.Component<Props> {
   }
 
   private optionContextUpdate = () => {
-    this.forceUpdate()
+    canUseDOM && this.forceUpdate()
   }
 
   private updateOptionValues (
