@@ -28,6 +28,7 @@ export interface Props {
   pieceType?:string
   pieceSize?:string
   viewBox?:string
+  className?: string
 }
 
 export default class AvatarComponent extends React.Component<Props> {
@@ -49,8 +50,8 @@ export default class AvatarComponent extends React.Component<Props> {
   }
 
   render () {
-    const { avatarStyle, style } = this.props
-    return <Avatar avatarStyle={avatarStyle as AvatarStyle} style={style} />
+    const { avatarStyle, style, className } = this.props
+    return <Avatar avatarStyle={avatarStyle as AvatarStyle} style={style} className={className} />
   }
 
   private updateOptionContext (props: Props) {
