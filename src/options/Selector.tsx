@@ -48,7 +48,9 @@ export default class Selector extends React.Component<Props> {
     }
   }
 
-  UNSAFE_componentWillUpdate(nextProps: Props & { children?: React.ReactNode }) {
+  UNSAFE_componentWillUpdate(
+    nextProps: Props & { children?: React.ReactNode }
+  ) {
     this.updateOptionValues(nextProps)
   }
 
