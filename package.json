@@ -1,5 +1,6 @@
 {
-  "name": "avataaars",
+  "name": "@bugfix/avataaars",
+  "private": false,
   "version": "2021.0801.0813",
   "description": "React component for avataaars ",
   "main": "dist/index.js",
@@ -8,7 +9,7 @@
     "react",
     "avatar"
   ],
-  "repository": "git@github.com:fangpenlin/avataaars.git",
+  "repository": "git@github.com:soulteary/avataaars.git",
   "author": "Fang-Pen Lin <hello@fangpenlin.com>",
   "license": "MIT",
   "scripts": {
