@@ -1,9 +1,9 @@
 export default class Option {
     private _key;
     private _label;
-    get key(): string;
-    get label(): string;
-    constructor({ key, label }: {
+    readonly key: string;
+    readonly label: string;
+    constructor({key, label}: {
         key: string;
         label: string;
     });

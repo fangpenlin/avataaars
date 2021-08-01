@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 import { OptionContext } from './options';
 export { default as Avatar, AvatarStyle } from './avatar';
@@ -7,6 +8,7 @@ export interface Props {
     style?: React.CSSProperties;
     topType?: string;
     accessoriesType?: string;
+    hatColor?: string;
     hairColor?: string;
     facialHairType?: string;
     facialHairColor?: string;
@@ -20,6 +22,7 @@ export interface Props {
     pieceType?: string;
     pieceSize?: string;
     viewBox?: string;
+    className?: string;
 }
 export default class AvatarComponent extends React.Component<Props> {
     static childContextTypes: {
@@ -29,10 +32,10 @@ export default class AvatarComponent extends React.Component<Props> {
     getChildContext(): {
         optionContext: OptionContext;
     };
-    componentWillMount(): void;
-    componentWillReceiveProps(nextProps: Props): void;
+    UNSAFE_componentWillMount(): void;
+    UNSAFE_componentWillReceiveProps(nextProps: Props): void;
     render(): JSX.Element;
-    private updateOptionContext;
+    private updateOptionContext(props);
 }
 export declare class Piece extends React.Component<Props> {
     static childContextTypes: {
@@ -42,8 +45,8 @@ export declare class Piece extends React.Component<Props> {
     getChildContext(): {
         optionContext: OptionContext;
     };
-    componentWillMount(): void;
-    componentWillReceiveProps(nextProps: Props): void;
+    UNSAFE_componentWillMount(): void;
+    UNSAFE_componentWillReceiveProps(nextProps: Props): void;
     render(): JSX.Element;
-    private updateOptionContext;
+    private updateOptionContext(props);
 }
