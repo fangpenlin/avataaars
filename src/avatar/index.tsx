@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { uniqueId } from 'lodash'
+import * as uniqueId from 'lodash.uniqueid'
 
 import Accessories from './top/accessories'
 import Clothe from './clothes'
@@ -16,6 +16,7 @@ export interface Props {
   avatarStyle: AvatarStyle
   className?: string;
   style?: React.CSSProperties
+  className?: string
 }
 
 export default class Avatar extends React.Component<Props> {

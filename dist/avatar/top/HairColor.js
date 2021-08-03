@@ -1,14 +1,9 @@
 "use strict";
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
     return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -24,9 +19,9 @@ function makeColor(name, color) {
             return _super !== null && _super.apply(this, arguments) || this;
         }
         ColorComponent.prototype.render = function () {
-            return (React.createElement("g", { id: 'Skin/\uD83D\uDC76\uD83C\uDFFD-03-Brown', mask: "url(#" + this.props.maskID + ")", fill: color },
-                React.createElement("g", { transform: 'translate(0.000000, 0.000000) ', id: 'Color' },
-                    React.createElement("rect", { x: '0', y: '0', width: '264', height: '280' }))));
+            return (React.createElement("g", { id: "Skin/👶🏽-03-Brown", mask: "url(#" + this.props.maskID + ")", fill: color },
+                React.createElement("g", { transform: "translate(0.000000, 0.000000) ", id: "Color" },
+                    React.createElement("rect", { x: "0", y: "0", width: "264", height: "280" }))));
         };
         return ColorComponent;
     }(React.Component));
@@ -39,6 +34,7 @@ var Auburn = makeColor('Auburn', '#A55728');
 var Black = makeColor('Black', '#2C1B18');
 var Blonde = makeColor('Blonde', '#B58143');
 var BlondeGolden = makeColor('BlondeGolden', '#D6B370');
+var Blue = makeColor('Blue', '#000fdb');
 var Brown = makeColor('Brown', '#724133');
 var BrownDark = makeColor('BrownDark', '#4A312C');
 var PastelPink = makeColor('PastelPink', '#F59797');
@@ -56,6 +52,7 @@ var HairColor = /** @class */ (function (_super) {
             React.createElement(Black, { maskID: this.props.maskID }),
             React.createElement(Blonde, { maskID: this.props.maskID }),
             React.createElement(BlondeGolden, { maskID: this.props.maskID }),
+            React.createElement(Blue, { maskID: this.props.maskID }),
             React.createElement(Brown, { maskID: this.props.maskID }),
             React.createElement(BrownDark, { maskID: this.props.maskID }),
             React.createElement(PastelPink, { maskID: this.props.maskID }),

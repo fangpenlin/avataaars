@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 export default class ShirtScoopNeck extends React.Component {
     static optionValue: string;

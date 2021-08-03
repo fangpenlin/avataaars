@@ -1,32 +1,26 @@
 "use strict";
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
     return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Piece = exports.allOptions = exports.OptionContext = exports.Option = exports.AvatarStyle = exports.Avatar = void 0;
 var PropTypes = require("prop-types");
 var React = require("react");
 var avatar_1 = require("./avatar");
 var options_1 = require("./options");
 var avatar_2 = require("./avatar");
-Object.defineProperty(exports, "Avatar", { enumerable: true, get: function () { return avatar_2.default; } });
-Object.defineProperty(exports, "AvatarStyle", { enumerable: true, get: function () { return avatar_2.AvatarStyle; } });
+exports.Avatar = avatar_2.default;
+exports.AvatarStyle = avatar_2.AvatarStyle;
 var options_2 = require("./options");
-Object.defineProperty(exports, "Option", { enumerable: true, get: function () { return options_2.Option; } });
-Object.defineProperty(exports, "OptionContext", { enumerable: true, get: function () { return options_2.OptionContext; } });
-Object.defineProperty(exports, "allOptions", { enumerable: true, get: function () { return options_2.allOptions; } });
+exports.Option = options_2.Option;
+exports.OptionContext = options_2.OptionContext;
+exports.allOptions = options_2.allOptions;
 var piece_1 = require("./avatar/piece");
 var AvatarComponent = /** @class */ (function (_super) {
     __extends(AvatarComponent, _super);
@@ -45,8 +39,8 @@ var AvatarComponent = /** @class */ (function (_super) {
         this.updateOptionContext(nextProps);
     };
     AvatarComponent.prototype.render = function () {
-        var _a = this.props, avatarStyle = _a.avatarStyle, style = _a.style;
-        return React.createElement(avatar_1.default, { avatarStyle: avatarStyle, style: style });
+        var _a = this.props, avatarStyle = _a.avatarStyle, style = _a.style, className = _a.className;
+        return React.createElement(avatar_1.default, { avatarStyle: avatarStyle, style: style, className: className });
     };
     AvatarComponent.prototype.updateOptionContext = function (props) {
         var data = {};

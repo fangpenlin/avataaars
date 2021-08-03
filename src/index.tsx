@@ -15,6 +15,7 @@ export interface Props {
   style?: React.CSSProperties
   topType?: string
   accessoriesType?: string
+  hatColor?: string
   hairColor?: string
   facialHairType?: string
   facialHairColor?: string
@@ -28,6 +29,7 @@ export interface Props {
   pieceType?:string
   pieceSize?:string
   viewBox?:string
+  className?: string
 }
 
 export default class AvatarComponent extends React.Component<Props> {
@@ -40,11 +42,11 @@ export default class AvatarComponent extends React.Component<Props> {
     return { optionContext: this.optionContext }
   }
 
-  componentWillMount () {
+  UNSAFE_componentWillMount () {
     this.updateOptionContext(this.props)
   }
 
-  componentWillReceiveProps (nextProps: Props) {
+  UNSAFE_componentWillReceiveProps (nextProps: Props) {
     this.updateOptionContext(nextProps)
   }
 
@@ -76,11 +78,11 @@ export class Piece extends React.Component<Props> {
     return { optionContext: this.optionContext }
   }
 
-  componentWillMount () {
+  UNSAFE_componentWillMount () {
     this.updateOptionContext(this.props)
   }
 
-  componentWillReceiveProps (nextProps: Props) {
+  UNSAFE_componentWillReceiveProps (nextProps: Props) {
     this.updateOptionContext(nextProps)
   }
 

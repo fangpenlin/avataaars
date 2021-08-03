@@ -10,14 +10,14 @@ var Option = /** @class */ (function () {
         get: function () {
             return this._key;
         },
-        enumerable: false,
+        enumerable: true,
         configurable: true
     });
     Object.defineProperty(Option.prototype, "label", {
         get: function () {
             return this._label;
         },
-        enumerable: false,
+        enumerable: true,
         configurable: true
     });
     return Option;

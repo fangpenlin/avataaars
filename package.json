@@ -1,6 +1,7 @@
 {
-  "name": "avataaars",
-  "version": "1.2.2",
+  "name": "@bugfix/avataaars",
+  "private": false,
+  "version": "2021.0801.0813",
   "description": "React component for avataaars ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,22 +9,28 @@
     "react",
     "avatar"
   ],
-  "repository": "git@github.com:fangpenlin/avataaars.git",
+  "repository": "git@github.com:soulteary/avataaars.git",
   "author": "Fang-Pen Lin <hello@fangpenlin.com>",
   "license": "MIT",
+  "scripts": {
+    "format": "npx prettier --write src/**/*",
+    "build": "rm -rf dist && tsc"
+  },
   "peerDependencies": {
     "react": "^16.0.0"
   },
   "devDependencies": {
     "@types/react": "^16.0.25",
     "import-sort-style-renke": "^4.2.0",
+    "prettier": "^2.3.2",
     "tslint": "^5.8.0",
+    "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^7.0.0",
     "tslint-react": "^3.2.0",
     "typescript": "^2.6.2"
   },
   "dependencies": {
-    "lodash": ">=4.17.11",
+    "lodash.uniqueid": "^4.0.1",
     "prop-types": "^15.6.0"
   },
   "importSort": {

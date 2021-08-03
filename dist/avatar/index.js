@@ -1,23 +1,17 @@
 "use strict";
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
     return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AvatarStyle = void 0;
 var React = require("react");
-var lodash_1 = require("lodash");
+var uniqueId = require("lodash.uniqueid");
 var accessories_1 = require("./top/accessories");
 var clothes_1 = require("./clothes");
 var face_1 = require("./face");
@@ -32,19 +26,19 @@ var Avatar = /** @class */ (function (_super) {
     __extends(Avatar, _super);
     function Avatar() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
-        _this.path3 = lodash_1.uniqueId('react-path-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
-        _this.mask3 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = uniqueId('react-path-');
+        _this.path2 = uniqueId('react-path-');
+        _this.path3 = uniqueId('react-path-');
+        _this.mask1 = uniqueId('react-mask-');
+        _this.mask2 = uniqueId('react-mask-');
+        _this.mask3 = uniqueId('react-mask-');
         return _this;
     }
     Avatar.prototype.render = function () {
         var _a = this, path1 = _a.path1, path2 = _a.path2, path3 = _a.path3, mask1 = _a.mask1, mask2 = _a.mask2, mask3 = _a.mask3;
         var avatarStyle = this.props.avatarStyle;
         var circle = avatarStyle === AvatarStyle.Circle;
-        return (React.createElement("svg", { style: this.props.style, width: "264px", height: "280px", viewBox: "0 0 264 280", version: "1.1", xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink" },
+        return (React.createElement("svg", { style: this.props.style, className: this.props.className, width: "264px", height: "280px", viewBox: "0 0 264 280", version: "1.1", xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink" },
             React.createElement("desc", null, "Created with getavataaars.com"),
             React.createElement("defs", null,
                 React.createElement("circle", { id: path1, cx: "120", cy: "120", r: "120" }),
@@ -58,7 +52,7 @@ var Avatar = /** @class */ (function (_super) {
                                 React.createElement("use", { xlinkHref: '#' + path1 })),
                             React.createElement("use", { id: "Circle-Background", fill: "#E6E6E6", xlinkHref: '#' + path1 }),
                             React.createElement("g", { id: "Color/Palette/Blue-01", mask: 'url(#' + mask1 + ')', fill: "#65C9FF" },
-                                React.createElement("rect", { id: "\uD83D\uDD8DColor", x: "0", y: "0", width: "240", height: "240" })))) : null,
+                                React.createElement("rect", { id: "🖍Color", x: "0", y: "0", width: "240", height: "240" })))) : null,
                         circle ? (React.createElement("mask", { id: mask2, fill: "white" },
                             React.createElement("use", { xlinkHref: '#' + path2 }))) : null,
                         React.createElement("g", { id: "Mask" }),
