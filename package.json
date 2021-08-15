@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "lodash": ">=4.17.21",
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.7.2"
   },
   "importSort": {
     ".js, .jsx, .es6, .es": {
