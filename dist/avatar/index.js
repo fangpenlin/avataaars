@@ -44,7 +44,7 @@ var Avatar = /** @class */ (function (_super) {
         var _a = this, path1 = _a.path1, path2 = _a.path2, path3 = _a.path3, mask1 = _a.mask1, mask2 = _a.mask2, mask3 = _a.mask3;
         var avatarStyle = this.props.avatarStyle;
         var circle = avatarStyle === AvatarStyle.Circle;
-        return (React.createElement("svg", { style: this.props.style, width: "264px", height: "280px", viewBox: "0 0 264 280", version: "1.1", xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink" },
+        return (React.createElement("svg", { style: this.props.style, className: this.props.className, width: "264px", height: "280px", viewBox: "0 0 264 280", version: "1.1", xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink" },
             React.createElement("desc", null, "Created with getavataaars.com"),
             React.createElement("defs", null,
                 React.createElement("circle", { id: path1, cx: "120", cy: "120", r: "120" }),

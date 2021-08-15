@@ -5,6 +5,7 @@ export declare enum AvatarStyle {
 }
 export interface Props {
     avatarStyle: AvatarStyle;
+    className?: string;
     style?: React.CSSProperties;
 }
 export default class Avatar extends React.Component<Props> {

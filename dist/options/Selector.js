@@ -80,7 +80,7 @@ var Selector = /** @class */ (function (_super) {
         var values = React.Children.map(children, 
         // TODO: also validate and throw error if we don't see optionValue
         function (child) { return getComponentOptionValue(child.type); });
-        if (new Set(values).size !== values.length) {
+        if (new Set(values).size !== (values === null || values === void 0 ? void 0 : values.length)) {
             throw new Error('Duplicate values');
         }
         this.optionContext.setOptions(option.key, values);
