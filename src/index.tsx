@@ -11,6 +11,7 @@ import {default as PieceComponent} from './avatar/piece';
 
 export interface Props {
   avatarStyle: string
+  fillCircle?: string
   className?: string;
   style?: React.CSSProperties
   topType?: string
@@ -49,8 +50,8 @@ export default class AvatarComponent extends React.Component<Props> {
   }
 
   render () {
-    const { avatarStyle, style, className } = this.props
-    return <Avatar avatarStyle={avatarStyle as AvatarStyle} style={style} className={className} />
+    const { avatarStyle, fillCircle, style, className } = this.props
+    return <Avatar avatarStyle={avatarStyle as AvatarStyle} fillCircle={fillCircle} style={style} className={className} />
   }
 
   private updateOptionContext (props: Props) {
