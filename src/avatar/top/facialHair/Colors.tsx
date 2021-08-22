@@ -35,6 +35,7 @@ const Brown = makeColor('Brown', '#724133')
 const BrownDark = makeColor('BrownDark', '#4A312C')
 const Platinum = makeColor('Platinum', '#ECDCBF')
 const Red = makeColor('Red', '#C93305')
+const SilverGray = makeColor('SilverGray', '#E8E1E1')
 
 export default class Colors extends React.Component<Props> {
   render () {
@@ -48,6 +49,7 @@ export default class Colors extends React.Component<Props> {
         <BrownDark maskID={this.props.maskID} />
         <Platinum maskID={this.props.maskID} />
         <Red maskID={this.props.maskID} />
+        <SilverGray maskID={this.props.maskID} />
       </Selector>
     )
   }
