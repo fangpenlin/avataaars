@@ -93,12 +93,12 @@ export class SkullOutline extends React.Component<Props> {
   }
 }
 
-export class Bat extends React.Component<Props> {
-  static optionValue = 'Bat'
+export class Batman extends React.Component<Props> {
+  static optionValue = 'Batman'
   render() {
     return (
       <g
-        id="Clothing/Graphic/Bat"
+        id="Clothing/Graphic/Batman"
         mask={`url(#${this.props.maskID})`}
         fillRule="evenodd"
         fill="#FFFFFF">
@@ -412,7 +412,7 @@ export default class Graphics extends React.Component<Props> {
     return (
       <Selector option={GraphicOption} defaultOption={Skull}>
         <Logo maskID={this.props.maskId} />
-        <Bat maskID={this.props.maskID} />
+        <Batman maskID={this.props.maskID} />
         <Cumbia maskID={this.props.maskID} />
         <Deer maskID={this.props.maskID} />
         <Diamond maskID={this.props.maskID} />
