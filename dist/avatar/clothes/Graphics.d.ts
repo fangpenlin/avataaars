@@ -14,7 +14,7 @@ export declare class SkullOutline extends React.Component<Props> {
     static optionValue: string;
     render(): any;
 }
-export declare class Bat extends React.Component<Props> {
+export declare class Batman extends React.Component<Props> {
     static optionValue: string;
     render(): any;
 }
