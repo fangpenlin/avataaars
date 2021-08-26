@@ -103,8 +103,7 @@ var OptionContext = /** @class */ (function () {
     OptionContext.prototype.setOptions = function (key, options) {
         var _a;
         this.setState((_a = {},
-            _a[key] = __assign(__assign({}, this.state[key]), { key: key,
-                options: options }),
+            _a[key] = __assign(__assign({}, this.state[key]), { key: key, options: options }),
             _a));
     };
     OptionContext.prototype.setState = function (state) {
