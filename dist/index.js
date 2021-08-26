@@ -38,15 +38,15 @@ var AvatarComponent = /** @class */ (function (_super) {
     AvatarComponent.prototype.getChildContext = function () {
         return { optionContext: this.optionContext };
     };
-    AvatarComponent.prototype.componentWillMount = function () {
+    AvatarComponent.prototype.UNSAFE_componentWillMount = function () {
         this.updateOptionContext(this.props);
     };
-    AvatarComponent.prototype.componentWillReceiveProps = function (nextProps) {
+    AvatarComponent.prototype.UNSAFE_componentWillReceiveProps = function (nextProps) {
         this.updateOptionContext(nextProps);
     };
     AvatarComponent.prototype.render = function () {
-        var _a = this.props, avatarStyle = _a.avatarStyle, style = _a.style;
-        return React.createElement(avatar_1.default, { avatarStyle: avatarStyle, style: style });
+        var _a = this.props, avatarStyle = _a.avatarStyle, style = _a.style, className = _a.className;
+        return React.createElement(avatar_1.default, { avatarStyle: avatarStyle, style: style, className: className });
     };
     AvatarComponent.prototype.updateOptionContext = function (props) {
         var data = {};
@@ -76,10 +76,10 @@ var Piece = /** @class */ (function (_super) {
     Piece.prototype.getChildContext = function () {
         return { optionContext: this.optionContext };
     };
-    Piece.prototype.componentWillMount = function () {
+    Piece.prototype.UNSAFE_componentWillMount = function () {
         this.updateOptionContext(this.props);
     };
-    Piece.prototype.componentWillReceiveProps = function (nextProps) {
+    Piece.prototype.UNSAFE_componentWillReceiveProps = function (nextProps) {
         this.updateOptionContext(nextProps);
     };
     Piece.prototype.render = function () {

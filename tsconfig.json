@@ -11,8 +11,15 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "declaration": true,
+    "newLine": "lf",
     "outDir": "./dist",
-    "lib": ["es6", "dom"]
+    "lib": [
+      "es6",
+      "dom"
+    ]
   },
-  "types": ["jest", "node"]
+  "types": [
+    "jest",
+    "node"
+  ]
 }

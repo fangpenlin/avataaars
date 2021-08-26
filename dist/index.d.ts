@@ -1,9 +1,11 @@
+import * as PropTypes from 'prop-types';
 import * as React from 'react';
 import { OptionContext } from './options';
 export { default as Avatar, AvatarStyle } from './avatar';
 export { Option, OptionContext, allOptions } from './options';
 export interface Props {
     avatarStyle: string;
+    className?: string;
     style?: React.CSSProperties;
     topType?: string;
     accessoriesType?: string;
@@ -23,12 +25,13 @@ export interface Props {
 }
 export default class AvatarComponent extends React.Component<Props> {
     static childContextTypes: {
-        optionContext: any;
+        optionContext: PropTypes.Requireable<OptionContext>;
     };
     private optionContext;
     getChildContext(): {
         optionContext: OptionContext;
     };
+
     componentWillMount(): void;
     componentWillReceiveProps(nextProps: Props): void;
     render(): any;
@@ -36,12 +39,13 @@ export default class AvatarComponent extends React.Component<Props> {
 }
 export declare class Piece extends React.Component<Props> {
     static childContextTypes: {
-        optionContext: any;
+        optionContext: PropTypes.Requireable<OptionContext>;
     };
     private optionContext;
     getChildContext(): {
         optionContext: OptionContext;
     };
+
     componentWillMount(): void;
     componentWillReceiveProps(nextProps: Props): void;
     render(): any;
