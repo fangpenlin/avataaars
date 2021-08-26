@@ -410,7 +410,7 @@ export class Bear extends React.Component<Props> {
 export default class Graphics extends React.Component<Props> {
   render() {
     return (
-      <Selector option={GraphicOption} defaultOption={Skull}>
+      <Selector option={GraphicOption} defaultOption={Bear}>
         <Logo maskID={this.props.maskId} />
         <Batman maskID={this.props.maskID} />
         <Cumbia maskID={this.props.maskID} />
