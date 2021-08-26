@@ -31,7 +31,7 @@ export default class AvatarComponent extends React.Component<Props> {
     };
     componentWillMount(): void;
     componentWillReceiveProps(nextProps: Props): void;
-    render(): JSX.Element;
+    render(): any;
     private updateOptionContext;
 }
 export declare class Piece extends React.Component<Props> {
@@ -44,6 +44,6 @@ export declare class Piece extends React.Component<Props> {
     };
     componentWillMount(): void;
     componentWillReceiveProps(nextProps: Props): void;
-    render(): JSX.Element;
+    render(): any;
     private updateOptionContext;
 }
