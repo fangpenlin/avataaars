@@ -422,7 +422,7 @@ export default class Graphics extends React.Component<Props> {
   render() {
     return (
       <Selector option={GraphicOption} defaultOption={Bear}>
-        <Logo maskID={this.props.maskId} />
+        <Logo maskID={this.props.maskID} />
         <Batman maskID={this.props.maskID} />
         <Cumbia maskID={this.props.maskID} />
         <Deer maskID={this.props.maskID} />

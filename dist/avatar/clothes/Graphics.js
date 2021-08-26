@@ -239,7 +239,7 @@ var Graphics = /** @class */ (function (_super) {
     }
     Graphics.prototype.render = function () {
         return (React.createElement(options_1.Selector, { option: options_1.GraphicOption, defaultOption: Bear },
-            React.createElement(Logo, { maskID: this.props.maskId }),
+            React.createElement(Logo, { maskID: this.props.maskID }),
             React.createElement(Batman, { maskID: this.props.maskID }),
             React.createElement(Cumbia, { maskID: this.props.maskID }),
             React.createElement(Deer, { maskID: this.props.maskID }),
