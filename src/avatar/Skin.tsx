@@ -38,7 +38,7 @@ const Black = makeColor('Black', '#614335')
 export default class Skin extends React.Component<Props> {
   render() {
     return (
-      <Selector option={SkinOption} defaultOption={Light}>
+      <Selector option={SkinOption} defaultOption={Yellow}>
         <Tanned maskID={this.props.maskID} />
         <Yellow maskID={this.props.maskID} />
         <Pale maskID={this.props.maskID} />

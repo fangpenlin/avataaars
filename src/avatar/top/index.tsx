@@ -41,7 +41,7 @@ export default class Top extends React.Component {
   render () {
     const { children } = this.props
     return (
-      <Selector defaultOption={LongHairStraight} option={TopOption}>
+      <Selector defaultOption={NoHair} option={TopOption}>
         <NoHair>{children}</NoHair>
         <Eyepatch>{children}</Eyepatch>
         <Hat>{children}</Hat>

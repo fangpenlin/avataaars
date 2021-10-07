@@ -22,16 +22,16 @@ var LongHairFrida = /** @class */ (function (_super) {
     __extends(LongHairFrida, _super);
     function LongHairFrida() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
-        _this.filter2 = lodash_1.uniqueId('react-filter-');
-        _this.filter3 = lodash_1.uniqueId('react-filter-');
-        _this.filter4 = lodash_1.uniqueId('react-filter-');
-        _this.filter5 = lodash_1.uniqueId('react-filter-');
-        _this.filter6 = lodash_1.uniqueId('react-filter-');
-        _this.filter7 = lodash_1.uniqueId('react-filter-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
+        _this.filter1 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.filter2 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.filter3 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.filter4 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.filter5 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.filter6 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.filter7 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
         return _this;
     }
     LongHairFrida.prototype.render = function () {

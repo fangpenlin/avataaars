@@ -21,11 +21,11 @@ var Sunglasses = /** @class */ (function (_super) {
     __extends(Sunglasses, _super);
     function Sunglasses() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
-        _this.linearGradient1 = lodash_1.uniqueId('react-linear-gradient-');
-        _this.linearGradient2 = lodash_1.uniqueId('react-linear-gradient-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
+        _this.filter1 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.linearGradient1 = (0, lodash_1.uniqueId)('react-linear-gradient-');
+        _this.linearGradient2 = (0, lodash_1.uniqueId)('react-linear-gradient-');
         return _this;
     }
     Sunglasses.prototype.render = function () {

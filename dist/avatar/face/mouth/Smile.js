@@ -21,8 +21,8 @@ var Smile = /** @class */ (function (_super) {
     __extends(Smile, _super);
     function Smile() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
         return _this;
     }
     Smile.prototype.render = function () {

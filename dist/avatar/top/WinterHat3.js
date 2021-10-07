@@ -23,12 +23,12 @@ var WinterHat3 = /** @class */ (function (_super) {
     __extends(WinterHat3, _super);
     function WinterHat3() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
-        _this.path3 = lodash_1.uniqueId('react-path-');
+        _this.filter1 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask2 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path3 = (0, lodash_1.uniqueId)('react-path-');
         return _this;
     }
     WinterHat3.prototype.render = function () {

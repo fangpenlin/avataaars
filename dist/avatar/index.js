@@ -32,18 +32,18 @@ var Avatar = /** @class */ (function (_super) {
     __extends(Avatar, _super);
     function Avatar() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
-        _this.path3 = lodash_1.uniqueId('react-path-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
-        _this.mask3 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path3 = (0, lodash_1.uniqueId)('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask2 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask3 = (0, lodash_1.uniqueId)('react-mask-');
         return _this;
     }
     Avatar.prototype.render = function () {
         var _a = this, path1 = _a.path1, path2 = _a.path2, path3 = _a.path3, mask1 = _a.mask1, mask2 = _a.mask2, mask3 = _a.mask3;
-        var avatarStyle = this.props.avatarStyle;
-        var circle = avatarStyle === AvatarStyle.Circle;
+        // const { avatarStyle } = this.props
+        var circle = true;
         return (React.createElement("svg", { style: this.props.style, className: this.props.className, width: "264px", height: "280px", viewBox: "0 0 264 280", version: "1.1", xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink" },
             React.createElement("desc", null, "Created with getavataaars.com"),
             React.createElement("defs", null,

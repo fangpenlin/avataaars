@@ -59,7 +59,7 @@ var Top = /** @class */ (function (_super) {
     }
     Top.prototype.render = function () {
         var children = this.props.children;
-        return (React.createElement(options_1.Selector, { defaultOption: LongHairStraight_1.default, option: options_1.TopOption },
+        return (React.createElement(options_1.Selector, { defaultOption: NoHair_1.default, option: options_1.TopOption },
             React.createElement(NoHair_1.default, null, children),
             React.createElement(Eyepatch_1.default, null, children),
             React.createElement(Hat_1.default, null, children),

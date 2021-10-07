@@ -23,10 +23,10 @@ var LongHairStraight = /** @class */ (function (_super) {
     __extends(LongHairStraight, _super);
     function LongHairStraight() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask2 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
         return _this;
     }
     LongHairStraight.prototype.render = function () {

@@ -21,7 +21,7 @@ var Prescription01 = /** @class */ (function (_super) {
     __extends(Prescription01, _super);
     function Prescription01() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
+        _this.filter1 = (0, lodash_1.uniqueId)('react-filter-');
         return _this;
     }
     Prescription01.prototype.render = function () {

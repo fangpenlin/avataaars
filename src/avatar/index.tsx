@@ -28,8 +28,8 @@ export default class Avatar extends React.Component<Props> {
 
   render() {
     const { path1, path2, path3, mask1, mask2, mask3 } = this
-    const { avatarStyle } = this.props
-    const circle = avatarStyle === AvatarStyle.Circle
+    // const { avatarStyle } = this.props
+    const circle = true
     return (
       <svg
         style={this.props.style}

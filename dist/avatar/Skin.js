@@ -48,7 +48,7 @@ var Skin = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Skin.prototype.render = function () {
-        return (React.createElement(options_1.Selector, { option: options_1.SkinOption, defaultOption: Light },
+        return (React.createElement(options_1.Selector, { option: options_1.SkinOption, defaultOption: Yellow },
             React.createElement(Tanned, { maskID: this.props.maskID }),
             React.createElement(Yellow, { maskID: this.props.maskID }),
             React.createElement(Pale, { maskID: this.props.maskID }),

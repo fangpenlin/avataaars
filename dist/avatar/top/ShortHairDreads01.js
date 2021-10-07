@@ -23,11 +23,11 @@ var ShortHairDreads01 = /** @class */ (function (_super) {
     __extends(ShortHairDreads01, _super);
     function ShortHairDreads01() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
-        _this.path3 = lodash_1.uniqueId('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask2 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path3 = (0, lodash_1.uniqueId)('react-path-');
         return _this;
     }
     ShortHairDreads01.prototype.render = function () {

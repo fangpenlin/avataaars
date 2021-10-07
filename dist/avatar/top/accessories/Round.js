@@ -21,8 +21,8 @@ var Round = /** @class */ (function (_super) {
     __extends(Round, _super);
     function Round() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.filter1 = (0, lodash_1.uniqueId)('react-filter-');
         return _this;
     }
     Round.prototype.render = function () {
