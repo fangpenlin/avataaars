@@ -34,6 +34,7 @@ const BlondeGolden = makeColor('BlondeGolden', '#D6B370')
 const Brown = makeColor('Brown', '#724133')
 const BrownDark = makeColor('BrownDark', '#4A312C')
 const PastelPink = makeColor('PastelPink', '#F59797')
+const PastelBlue = makeColor('PastelBlue', '#39B4DD')
 const Blue = makeColor('Blue', '#000fdb')
 const Platinum = makeColor('Platinum', '#ECDCBF')
 const Red = makeColor('Red', '#C93305')
@@ -50,6 +51,7 @@ export default class HairColor extends React.Component<Props> {
         <Brown maskID={this.props.maskID} />
         <BrownDark maskID={this.props.maskID} />
         <PastelPink maskID={this.props.maskID} />
+        <PastelBlue maskID={this.props.maskID} />
         <Blue maskID={this.props.maskID} />
         <Platinum maskID={this.props.maskID} />
         <Red maskID={this.props.maskID} />
