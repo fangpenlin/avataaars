@@ -23,13 +23,13 @@ var Turban = /** @class */ (function (_super) {
     __extends(Turban, _super);
     function Turban() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
-        _this.mask3 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
-        _this.path3 = lodash_1.uniqueId('react-path-');
+        _this.filter1 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask2 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask3 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path3 = (0, lodash_1.uniqueId)('react-path-');
         return _this;
     }
     Turban.prototype.render = function () {
@@ -48,7 +48,7 @@ var Turban = /** @class */ (function (_super) {
             React.createElement("mask", { id: mask1, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path1 })),
             React.createElement("g", { id: 'Mask' }),
-            React.createElement("g", { id: 'Top/Accesories/Turban', mask: "url(#" + mask1 + ")" },
+            React.createElement("g", { id: 'Top/Accesories/Turban', mask: "url(#".concat(mask1, ")") },
                 React.createElement("g", { transform: 'translate(-1.000000, 0.000000)' },
                     React.createElement(facialHair_1.default, null),
                     React.createElement("g", { id: 'Behind', strokeWidth: '1', fillRule: 'evenodd', transform: 'translate(1.000000, 0.000000)' },

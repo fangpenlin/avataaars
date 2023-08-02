@@ -11,5 +11,5 @@ export interface Props {
     viewBox?: string;
 }
 export default class PieceComponent extends React.Component<Props> {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

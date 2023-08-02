@@ -23,16 +23,16 @@ var WinterHat4 = /** @class */ (function (_super) {
     __extends(WinterHat4, _super);
     function WinterHat4() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
-        _this.mask3 = lodash_1.uniqueId('react-mask-');
-        _this.mask4 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
-        _this.path3 = lodash_1.uniqueId('react-path-');
-        _this.path4 = lodash_1.uniqueId('react-path-');
-        _this.path5 = lodash_1.uniqueId('react-path-');
+        _this.filter1 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask2 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask3 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask4 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path3 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path4 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path5 = (0, lodash_1.uniqueId)('react-path-');
         return _this;
     }
     WinterHat4.prototype.render = function () {
@@ -63,7 +63,7 @@ var WinterHat4 = /** @class */ (function (_super) {
                         React.createElement("use", { xlinkHref: '#' + path3 })),
                     React.createElement("use", { id: 'light', fillOpacity: '0.300000012', fill: '#FFFFFF', xlinkHref: '#' + path3 })),
                 React.createElement("g", { id: 'hat-front' },
-                    React.createElement("use", { fill: 'black', fillOpacity: '1', filter: "url(#" + path4 + ")", xlinkHref: '#' + path4 }),
+                    React.createElement("use", { fill: 'black', fillOpacity: '1', filter: "url(#".concat(path4, ")"), xlinkHref: '#' + path4 }),
                     React.createElement("use", { fill: '#F4F4F4', fillRule: 'evenodd', xlinkHref: '#' + path4 })),
                 React.createElement(facialHair_1.default, null),
                 this.props.children)));

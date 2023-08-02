@@ -5,7 +5,7 @@ export interface OptionState {
     defaultValue?: string;
     available: number;
 }
-export declare type OptionContextState = {
+export type OptionContextState = {
     [index: string]: OptionState;
 };
 export default class OptionContext {

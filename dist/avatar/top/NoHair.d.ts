@@ -4,5 +4,5 @@ export default class NoHair extends React.Component {
     private filter1;
     private mask1;
     private path1;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

@@ -11,5 +11,5 @@ export default class WinterHat4 extends React.Component {
     private path3;
     private path4;
     private path5;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

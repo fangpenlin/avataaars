@@ -21,7 +21,7 @@ var OptionContext_1 = require("./OptionContext");
 function getComponentOptionValue(component) {
     var optionValue = component.optionValue;
     if (!optionValue) {
-        throw new Error("optionValue should be provided for " + component);
+        throw new Error("optionValue should be provided for ".concat(component));
     }
     return optionValue;
 }

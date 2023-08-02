@@ -21,8 +21,8 @@ var Smile = /** @class */ (function (_super) {
     __extends(Smile, _super);
     function Smile() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
         return _this;
     }
     Smile.prototype.render = function () {
@@ -33,8 +33,8 @@ var Smile = /** @class */ (function (_super) {
             React.createElement("mask", { id: mask1, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path1 })),
             React.createElement("use", { id: 'Mouth', fillOpacity: '0.699999988', fill: '#000000', fillRule: 'evenodd', xlinkHref: '#' + path1 }),
-            React.createElement("rect", { id: 'Teeth', fill: '#FFFFFF', fillRule: 'evenodd', mask: "url(#" + mask1 + ")", x: '39', y: '2', width: '31', height: '16', rx: '5' }),
-            React.createElement("g", { id: 'Tongue', strokeWidth: '1', fillRule: 'evenodd', mask: "url(#" + mask1 + ")", fill: '#FF4F6D' },
+            React.createElement("rect", { id: 'Teeth', fill: '#FFFFFF', fillRule: 'evenodd', mask: "url(#".concat(mask1, ")"), x: '39', y: '2', width: '31', height: '16', rx: '5' }),
+            React.createElement("g", { id: 'Tongue', strokeWidth: '1', fillRule: 'evenodd', mask: "url(#".concat(mask1, ")"), fill: '#FF4F6D' },
                 React.createElement("g", { transform: 'translate(38.000000, 24.000000)' },
                     React.createElement("circle", { cx: '11', cy: '11', r: '11' }),
                     React.createElement("circle", { cx: '21', cy: '11', r: '11' })))));
