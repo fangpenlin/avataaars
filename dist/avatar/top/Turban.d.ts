@@ -8,5 +8,5 @@ export default class Turban extends React.Component {
     private path1;
     private path2;
     private path3;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

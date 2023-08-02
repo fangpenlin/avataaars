@@ -6,5 +6,5 @@ export default class ShortHairShortFlat extends React.Component {
     private mask2;
     private path1;
     private path2;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

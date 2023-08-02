@@ -11,5 +11,5 @@ export default class LongHairFrida extends React.Component {
     private mask1;
     private path1;
     private path2;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

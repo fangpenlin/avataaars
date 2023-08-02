@@ -33,7 +33,7 @@ export default class AvatarComponent extends React.Component<Props> {
     };
     UNSAFE_componentWillMount(): void;
     UNSAFE_componentWillReceiveProps(nextProps: Props): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
     private updateOptionContext;
 }
 export declare class Piece extends React.Component<Props> {
@@ -46,6 +46,6 @@ export declare class Piece extends React.Component<Props> {
     };
     UNSAFE_componentWillMount(): void;
     UNSAFE_componentWillReceiveProps(nextProps: Props): void;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
     private updateOptionContext;
 }

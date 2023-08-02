@@ -1,4 +1,4 @@
 import * as React from 'react';
 export default class Top extends React.Component {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }

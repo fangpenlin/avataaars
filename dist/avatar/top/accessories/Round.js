@@ -21,8 +21,8 @@ var Round = /** @class */ (function (_super) {
     __extends(Round, _super);
     function Round() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.filter1 = (0, lodash_1.uniqueId)('react-filter-');
         return _this;
     }
     Round.prototype.render = function () {
@@ -34,7 +34,7 @@ var Round = /** @class */ (function (_super) {
                     React.createElement("feOffset", { dx: '0', dy: '2', in: 'SourceAlpha', result: 'shadowOffsetOuter1' }),
                     React.createElement("feColorMatrix", { values: '0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0', type: 'matrix', in: 'shadowOffsetOuter1' }))),
             React.createElement("g", { id: 'Lennon-Glasses' },
-                React.createElement("use", { fill: 'black', fillOpacity: '1', filter: "url(#" + filter1 + ")", xlinkHref: '#' + path1 }),
+                React.createElement("use", { fill: 'black', fillOpacity: '1', filter: "url(#".concat(filter1, ")"), xlinkHref: '#' + path1 }),
                 React.createElement("use", { fill: '#252C2F', fillRule: 'evenodd', xlinkHref: '#' + path1 }))));
     };
     Round.optionValue = 'Round';

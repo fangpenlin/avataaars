@@ -21,10 +21,10 @@ var Squint = /** @class */ (function (_super) {
     __extends(Squint, _super);
     function Squint() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask2 = (0, lodash_1.uniqueId)('react-mask-');
         return _this;
     }
     Squint.prototype.render = function () {
@@ -37,12 +37,12 @@ var Squint = /** @class */ (function (_super) {
                 React.createElement("mask", { id: mask1, fill: 'white' },
                     React.createElement("use", { xlinkHref: '#' + path1 })),
                 React.createElement("use", { id: 'The-white-stuff', fill: '#FFFFFF', xlinkHref: '#' + path1 }),
-                React.createElement("circle", { fillOpacity: '0.699999988', fill: '#000000', mask: "url(#" + mask1 + ")", cx: '14', cy: '10', r: '6' })),
+                React.createElement("circle", { fillOpacity: '0.699999988', fill: '#000000', mask: "url(#".concat(mask1, ")"), cx: '14', cy: '10', r: '6' })),
             React.createElement("g", { id: 'Eye', transform: 'translate(68.000000, 13.000000)' },
                 React.createElement("mask", { id: mask2, fill: 'white' },
                     React.createElement("use", { xlinkHref: '#' + path2 })),
                 React.createElement("use", { id: 'Eyeball-Mask', fill: '#FFFFFF', xlinkHref: '#' + path2 }),
-                React.createElement("circle", { fillOpacity: '0.699999988', fill: '#000000', mask: "url(#" + mask2 + ")", cx: '14', cy: '10', r: '6' }))));
+                React.createElement("circle", { fillOpacity: '0.699999988', fill: '#000000', mask: "url(#".concat(mask2, ")"), cx: '14', cy: '10', r: '6' }))));
     };
     Squint.optionValue = 'Squint';
     return Squint;

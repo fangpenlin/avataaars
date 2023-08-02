@@ -6,5 +6,5 @@ export default class Sunglasses extends React.Component {
     private filter1;
     private linearGradient1;
     private linearGradient2;
-    render(): JSX.Element;
+    render(): React.JSX.Element;
 }
