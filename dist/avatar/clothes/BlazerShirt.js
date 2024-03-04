@@ -21,8 +21,8 @@ var BlazerShirt = /** @class */ (function (_super) {
     __extends(BlazerShirt, _super);
     function BlazerShirt() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
         return _this;
     }
     BlazerShirt.prototype.render = function () {
@@ -34,10 +34,10 @@ var BlazerShirt = /** @class */ (function (_super) {
                 React.createElement("mask", { id: mask1, fill: 'white' },
                     React.createElement("use", { xlinkHref: '#' + path1 })),
                 React.createElement("use", { id: 'Clothes', fill: '#E6E6E6', xlinkHref: '#' + path1 }),
-                React.createElement("g", { id: 'Color/Palette/Black', mask: "url(#" + mask1 + ")", fill: '#262E33' },
+                React.createElement("g", { id: 'Color/Palette/Black', mask: "url(#".concat(mask1, ")"), fill: '#262E33' },
                     React.createElement("g", { transform: 'translate(-32.000000, -29.000000)', id: '\uD83D\uDD8DColor' },
                         React.createElement("rect", { x: '0', y: '0', width: '264', height: '110' }))),
-                React.createElement("g", { id: 'Shadowy', opacity: '0.599999964', mask: "url(#" + mask1 + ")", fillOpacity: '0.16', fill: '#000000' },
+                React.createElement("g", { id: 'Shadowy', opacity: '0.599999964', mask: "url(#".concat(mask1, ")"), fillOpacity: '0.16', fill: '#000000' },
                     React.createElement("g", { transform: 'translate(60.000000, -25.000000)', id: 'Hola-\uD83D\uDC4B\uD83C\uDFFC' },
                         React.createElement("ellipse", { cx: '40.5', cy: '27.8476251', rx: '39.6351047', ry: '26.9138272' })))),
             React.createElement("g", { id: 'Blazer', transform: 'translate(32.000000, 28.000000)' },

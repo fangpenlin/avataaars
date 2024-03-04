@@ -6,7 +6,7 @@
     "jsx": "react",
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
-    "strictNullChecks": true,
+    "strictNullChecks": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,

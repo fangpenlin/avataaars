@@ -23,11 +23,11 @@ var ShortHairShortWaved = /** @class */ (function (_super) {
     __extends(ShortHairShortWaved, _super);
     function ShortHairShortWaved() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
+        _this.filter1 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask2 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
         return _this;
     }
     ShortHairShortWaved.prototype.render = function () {
@@ -45,7 +45,7 @@ var ShortHairShortWaved = /** @class */ (function (_super) {
             React.createElement("mask", { id: mask2, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path2 })),
             React.createElement("g", { id: 'Mask' }),
-            React.createElement("g", { id: 'Top/Short-Hair/Short-Waved', mask: "url(#" + mask2 + ")" },
+            React.createElement("g", { id: 'Top/Short-Hair/Short-Waved', mask: "url(#".concat(mask2, ")") },
                 React.createElement("g", { transform: 'translate(-1.000000, 0.000000)' },
                     React.createElement(facialHair_1.default, null),
                     React.createElement("mask", { id: mask1, fill: 'white' },

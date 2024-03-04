@@ -22,8 +22,8 @@ var ShirtCrewNeck = /** @class */ (function (_super) {
     __extends(ShirtCrewNeck, _super);
     function ShirtCrewNeck() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
         return _this;
     }
     ShirtCrewNeck.prototype.render = function () {
@@ -35,7 +35,7 @@ var ShirtCrewNeck = /** @class */ (function (_super) {
                 React.createElement("use", { xlinkHref: '#' + path1 })),
             React.createElement("use", { id: 'Clothes', fill: '#E6E6E6', fillRule: 'evenodd', xlinkHref: '#' + path1 }),
             React.createElement(Colors_1.default, { maskID: mask1 }),
-            React.createElement("g", { id: 'Shadowy', opacity: '0.599999964', strokeWidth: '1', fillRule: 'evenodd', mask: "url(#" + mask1 + ")", fillOpacity: '0.16', fill: '#000000' },
+            React.createElement("g", { id: 'Shadowy', opacity: '0.599999964', strokeWidth: '1', fillRule: 'evenodd', mask: "url(#".concat(mask1, ")"), fillOpacity: '0.16', fill: '#000000' },
                 React.createElement("g", { transform: 'translate(92.000000, 4.000000)', id: 'Hola-\uD83D\uDC4B\uD83C\uDFFC' },
                     React.createElement("ellipse", { cx: '40.5', cy: '27.8476251', rx: '39.6351047', ry: '26.9138272' })))));
     };

@@ -22,11 +22,11 @@ var Hat = /** @class */ (function (_super) {
     __extends(Hat, _super);
     function Hat() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
+        _this.filter1 = (0, lodash_1.uniqueId)('react-filter-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask2 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
         return _this;
     }
     Hat.prototype.render = function () {
@@ -44,15 +44,15 @@ var Hat = /** @class */ (function (_super) {
             React.createElement("mask", { id: mask1, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path2 })),
             React.createElement("g", { id: 'Mask' }),
-            React.createElement("g", { id: 'Top/Accesories/Hat', mask: "url(#" + mask1 + ")" },
+            React.createElement("g", { id: 'Top/Accesories/Hat', mask: "url(#".concat(mask1, ")") },
                 React.createElement("g", { transform: 'translate(-1.000000, 0.000000)' },
                     React.createElement("g", { id: 'Hat', strokeWidth: '1', fillRule: 'evenodd', transform: 'translate(1.000000, 0.000000)' },
                         React.createElement("mask", { id: mask2, fill: 'white' },
                             React.createElement("use", { xlinkHref: '#' + path1 })),
                         React.createElement("g", { id: 'Mask-Hair' }),
-                        React.createElement("path", { d: 'M123.182388,2 L141.817612,2 L141.817612,2 C160.609055,2 176.866947,15.0804442 180.890118,33.4361631 L190,75 L75,75 L84.1098821,33.4361631 L84.1098821,33.4361631 C88.1330533,15.0804442 104.390945,2 123.182388,2 Z', fill: '#1F333C', mask: "url(#" + mask2 + ")" }),
-                        React.createElement("ellipse", { id: 'Hipster', fill: '#1F333C', mask: "url(#" + mask2 + ")", cx: '132', cy: '87.5', rx: '122', ry: '57.5' }),
-                        React.createElement("ellipse", { id: 'Very', fill: '#15232A', mask: "url(#" + mask2 + ")", cx: '132', cy: '82', rx: '62', ry: '25' })),
+                        React.createElement("path", { d: 'M123.182388,2 L141.817612,2 L141.817612,2 C160.609055,2 176.866947,15.0804442 180.890118,33.4361631 L190,75 L75,75 L84.1098821,33.4361631 L84.1098821,33.4361631 C88.1330533,15.0804442 104.390945,2 123.182388,2 Z', fill: '#1F333C', mask: "url(#".concat(mask2, ")") }),
+                        React.createElement("ellipse", { id: 'Hipster', fill: '#1F333C', mask: "url(#".concat(mask2, ")"), cx: '132', cy: '87.5', rx: '122', ry: '57.5' }),
+                        React.createElement("ellipse", { id: 'Very', fill: '#15232A', mask: "url(#".concat(mask2, ")"), cx: '132', cy: '82', rx: '62', ry: '25' })),
                     React.createElement(facialHair_1.default, null),
                     this.props.children))));
     };
