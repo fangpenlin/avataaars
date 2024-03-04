@@ -22,8 +22,8 @@ var BeardMajestic = /** @class */ (function (_super) {
     __extends(BeardMajestic, _super);
     function BeardMajestic() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
         return _this;
     }
     BeardMajestic.prototype.render = function () {

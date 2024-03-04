@@ -23,11 +23,11 @@ var ShortHairShaggyMullet = /** @class */ (function (_super) {
     __extends(ShortHairShaggyMullet, _super);
     function ShortHairShaggyMullet() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
-        _this.path3 = lodash_1.uniqueId('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.mask2 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path3 = (0, lodash_1.uniqueId)('react-path-');
         return _this;
     }
     ShortHairShaggyMullet.prototype.render = function () {
@@ -40,7 +40,7 @@ var ShortHairShaggyMullet = /** @class */ (function (_super) {
             React.createElement("mask", { id: mask1, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path1 })),
             React.createElement("g", { id: 'Mask' }),
-            React.createElement("g", { id: 'Top/Short-Hair/Shaggy-Mullet', mask: "url(#" + mask1 + ")" },
+            React.createElement("g", { id: 'Top/Short-Hair/Shaggy-Mullet', mask: "url(#".concat(mask1, ")") },
                 React.createElement("g", { transform: 'translate(-1.000000, 0.000000)' },
                     this.props.children,
                     React.createElement("mask", { id: mask2, fill: 'white' },

@@ -21,10 +21,10 @@ var Vomit = /** @class */ (function (_super) {
     __extends(Vomit, _super);
     function Vomit() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
+        _this.path2 = (0, lodash_1.uniqueId)('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.filter1 = (0, lodash_1.uniqueId)('react-filter-');
         return _this;
     }
     Vomit.prototype.render = function () {
@@ -40,10 +40,10 @@ var Vomit = /** @class */ (function (_super) {
             React.createElement("mask", { id: mask1, fill: 'white' },
                 React.createElement("use", { xlinkHref: '#' + path1, transform: 'translate(54.000000, 21.499998) scale(1, -1) translate(-54.000000, -21.499998) ' })),
             React.createElement("use", { id: 'Mouth', fillOpacity: '0.699999988', fill: '#000000', fillRule: 'evenodd', transform: 'translate(54.000000, 21.499998) scale(1, -1) translate(-54.000000, -21.499998) ', xlinkHref: '#' + path1 }),
-            React.createElement("rect", { id: 'Teeth', fill: '#FFFFFF', fillRule: 'evenodd', mask: "url(#" + mask1 + ")", x: '39', y: '0', width: '31', height: '16', rx: '5' }),
+            React.createElement("rect", { id: 'Teeth', fill: '#FFFFFF', fillRule: 'evenodd', mask: "url(#".concat(mask1, ")"), x: '39', y: '0', width: '31', height: '16', rx: '5' }),
             React.createElement("g", { id: 'Vomit-Stuff' },
                 React.createElement("use", { fill: '#88C553', fillRule: 'evenodd', xlinkHref: '#' + path2 }),
-                React.createElement("use", { fill: 'black', fillOpacity: '1', filter: "url(#" + filter1 + ")", xlinkHref: '#' + path2 }))));
+                React.createElement("use", { fill: 'black', fillOpacity: '1', filter: "url(#".concat(filter1, ")"), xlinkHref: '#' + path2 }))));
     };
     Vomit.optionValue = 'Vomit';
     return Vomit;

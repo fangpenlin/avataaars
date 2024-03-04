@@ -1,3 +1,8 @@
+export interface IOption {
+  key: string;
+  label: string;
+}
+
 export default class Option {
   private _key: string
   private _label: string

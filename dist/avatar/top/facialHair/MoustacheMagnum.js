@@ -22,8 +22,8 @@ var MoustacheMagnum = /** @class */ (function (_super) {
     __extends(MoustacheMagnum, _super);
     function MoustacheMagnum() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
+        _this.mask1 = (0, lodash_1.uniqueId)('react-mask-');
+        _this.path1 = (0, lodash_1.uniqueId)('react-path-');
         return _this;
     }
     MoustacheMagnum.prototype.render = function () {
